@@ -1,3 +1,3 @@
-# #BYDINOKI.com
+# #Welcome to BYDINOKI.com
 This is the Official Dinoki's WEB-SITE ! <br/>
-Here you find the Dinoki ON's notices and funny facts.
+Mantente al tanto sobre las novedades que nos dará el Dinoki ON !
