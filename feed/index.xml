@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>#BYDINOKI</title>
+	<atom:link href="https://bydinoki.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://bydinoki.com</link>
+	<description>The official Dinoki ON page.</description>
+	<lastBuildDate>Mon, 31 Mar 2025 02:18:24 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.7.2</generator>
+
+<image>
+	<url>https://bydinoki.com/wp-content/uploads/2025/03/favicobd.png</url>
+	<title>#BYDINOKI</title>
+	<link>https://bydinoki.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Welcome to #BYDINOKI</title>
+		<link>https://bydinoki.com/2025/03/hola-mundo/</link>
+					<comments>https://bydinoki.com/2025/03/hola-mundo/#comments</comments>
+		
+		<dc:creator><![CDATA[dinoki_0n]]></dc:creator>
+		<pubDate>Mon, 31 Mar 2025 00:34:25 +0000</pubDate>
+				<category><![CDATA[#BYDINOKI]]></category>
+		<category><![CDATA[bydinoki]]></category>
+		<guid isPermaLink="false">https://bydinoki.com/?p=1</guid>
+
+					<description><![CDATA[Mantente al tanto sobre las novedades que nos dará el Dinoki ON !]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img decoding="async" src="https://i.imgur.com/BpQk3Ay.jpeg" alt=""/></figure>
+
+
+
+<p>Mantente al tanto sobre las novedades que nos dará el Dinoki ON !</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://bydinoki.com/2025/03/hola-mundo/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
