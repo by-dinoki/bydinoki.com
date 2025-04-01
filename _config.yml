@@ -28,7 +28,7 @@ twitter_username: dinoki_0n
 github_username:  dinoki-0n
 
 # Build settings
-theme: minima
+theme: wind-theme
 plugins:
   - jekyll-feed
 
