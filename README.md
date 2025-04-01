@@ -1,3 +1,2 @@
-# BYDINOKI.com
-
-This is the official page
+# #BYDINOKI.com
+Welcome to the Dinoki Page !
