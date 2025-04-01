@@ -1,18 +1,23 @@
-## Supply, an e-commerce Jekyll theme with Gumroad integration
+---
+permalink: /about/
+title: About
+hero: About
+text-button: I demand Supply!
+---
+## Supply, a Jekyll theme
+Supply is an e-commerce template for [Jekyll](https://jekyllrb.com/) + [Gumroad](https://gumroad.com), designed with [Tachyons CSS](https://github.com/tachyons-css/tachyons) by [alternatyves](https://alternatyves.com/).
+If you are a Gumroad creator, you can use Supply with Jekyll to display products within your site or blog.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d0fa21a2-19fa-45da-a77a-024c58295e7f/deploy-status)](https://app.netlify.com/sites/supply-demo/deploys)
+[Supply Code on GitHub](https://github.com/YJPL/Supply/){: .btn .btn-outline--secondary }
 
-Supply is an e-commerce template for [Jekyll](https://jekyllrb.com/) + [Gumroad](https://gumroad.com), designed with [Tachyons CSS](https://github.com/tachyons-css/tachyons).
+[Demo Site with documentation](/){: .btn .btn-outline--info }
 
-If you are a Gumroad creator, you can use Supply with Jekyll to display and sell products on your site or blog.
+[Templates Supply](https://templates.supply){: .btn .btn-outline--success }
 
-[Demo Site with documentation](https://supply.templates.supply)
 
-Browse through a live demo: [https://templates.supply](https://templates.supply).
+<a href="https://gum.co/supply" class="no-underline pv2 grow db"><img class="w-100" src="/images/templates/jekyll/Supply-temp.png"></a>
 
-![Supply template screenshot](/images/screenshot.png)
-
-Supply is designed by [alternatyves](https://alternatyves.com/).
+{% include gumroad-overlay.html id="supply" %}
 
 Find more [templates, themes, and Jekyll tutorials](https://jekyllrb.com/resources/).
 
@@ -27,7 +32,7 @@ Find more [templates, themes, and Jekyll tutorials](https://jekyllrb.com/resourc
 - [x] RSS/Atom feed
 - [x] SEO tags
 - [x] Microdata markup
-- [x] Jekyll `livereload` + NPM for fast development
+- [x] [Gulp.js](https://gulpjs.com) + [Browsersync](https://www.browsersync.io) for fast development
 - [x] Built-in site search
 
 ## Setup
@@ -44,7 +49,7 @@ Install the dependencies with [Bundler](http://bundler.io/):
 $ bundle install
 ~~~
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+Run Jekyll commands through Bundler to ensure you're using the right versions:
 
 ~~~bash
 $ bundle exec jekyll serve
@@ -81,48 +86,35 @@ If you have products on Gumroad, you can start adding product pages right away. 
 npm install
 ~~~
 
-
 ### Tachyons
 
 You can change the site styling using [Tachyons](http://tachyons.io), look for the CSS in the `sup-theme` file, located in the `src` folder.
 
 Tachyons is a CSS toolkit and design system based on using components. Please refer to [Tachyons documentation](http://tachyons.io/docs/), you can also start with [https://github.com/dwyl/learn-tachyons](https://github.com/dwyl/learn-tachyons)
 
-Once you are done with your style changes, run:
+### Gulp commands with browser reload
 
-Run the npm run 
+Supply uses a couple of custom Gulp.js commands. To build your site concatenate your CSS (in `assets` -> `CSS`), simply run:
+
 ~~~bash
-build:css
+gulp build
 ~~~
 
-That will process all your CSS files in one readable file located in `assets/css/sup-tachyons.css`. 
+in Terminal.
 
-to minify your css you can run 
-
-```
-npm run minify-css
-```
-
-or 
-
-```
-npm run start
-```
-
-to minify and build the site locally.
+Then use
 
 
-### npm commands with browser reload
+~~~bash
+gulp watch
+~~~
 
-Supply uses a couple of custom Postcss npm scripts. Make sure your dependencies are installed: `npm install`. Type `npm outdated` to see if you have outdated versions, then install any outdated dependencies.
+This command builds the site locally on port 3000, with [Browsersync](https://www.browsersync.io) so you can quickly revise design changes.
 
-Once that is done, to build your site & concatenate your CSS (in `assets` -> `CSS`), simply run:
 
-```
-npm run start
-```
+Preview your site with browser reload at [localhost:3000](http://localhost:3000)
+Use the address [localhost:3001](http://localhost:3001) for additional features like grid preview, CSS highlighting, and more during development.
 
-This command builds the site locally on port 4000, you can quickly revise design changes thanks to `livereload`.
 
 ## Editing
 
@@ -148,21 +140,17 @@ Write something like:
 
 to get a product display like this:
 
-<a href="https://gum.co/supply" class="no-underline pv2 grow db"><img class="w-100" src="/images/supply-overlay.png"></a>
+<a href="https://gum.co/supply" class="no-underline pv2 grow db"><img class="w-100" src="/images/screenshot.png"></a>
 
-## Copyright / License
-*Supply* is designed by [alternatyves](https://alternatyves.com/) and licensed under the [MIT license](https://github.com/YJPL/Supply/blob/master/LICENSE).
+{% include gumroad-overlay.html id="supply" %}
 
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/YJPL/Supply/pulls)
+## Open-source
 
-Please use and [contribute to *Supply* ](https://github.com/YJPL/Supply/pulls).
+[Get Supply](https://github.com/YJPL/Supply/archive/master.zip){: .btn .btn-outline--secondary }
+
+<iframe src="https://github.com/sponsors/YJPL/button" title="Sponsor YJPL" height="35" width="107" style="border: 0;"></iframe>
 
 <a href="https://www.buymeacoffee.com/alternatyves/" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T013TB72)
-
-## Who is using this?
-
-- [x] [templates.supply](https://templates.supply)
-
-Are you using Supply? [Let me know!](https://github.com/YJPL/supply/edit/master/README.md)
+Please use and contribute to [Supply on GitHub](https://github.com/YJPL/Supply/){: .b .blue .hover-light-blue}
+{: .notice}
