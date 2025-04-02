@@ -177,6 +177,21 @@ margin-top: 20px;
 
 /* Header Style */
 
+body {
+opacity: 0;
+transform: rotateX(30deg);
+pointer-events: none;
+transition: 1.5s;
+overflow: hidden;
+    }
+
+body.cargado {
+opacity: 1;
+transform: rotateX(0deg);
+pointer-events: all;
+overflow: auto;
+}
+
 @media screen and (max-width: 900px) {
 
 .featured-imgo{
