@@ -347,7 +347,14 @@ min-height: 85vh;
 }
 
 .wraper-ing{  
+width: 300px;
+}
+
+@media screen and (max-width: 390px) {
+
+.wraper-ing{  
 width: 100%;
+}
 }
 
 /* Page Style */
