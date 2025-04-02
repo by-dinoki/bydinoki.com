@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+body.drawer{
+overflow: hidden;
+}
+
 .hlink1{
     
     color: #b80000;
