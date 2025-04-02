@@ -366,6 +366,13 @@ text-decoration:none;
 color: gray;
 }
 
+h1{
+font-size:2em;
+margin:.67em 0;
+font-weight:900;
+font-size:35px;
+}
+
 @media screen and (max-width: 500px) {
 
 .wraper-ing{  
