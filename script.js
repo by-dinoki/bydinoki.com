@@ -3,17 +3,18 @@
  const nav = document.querySelector("nav");
         const menuToggle = document.querySelector(".menu-toggle");
         const cerrar = document.querySelector(".cl0");
+const headd = document.querySelector("#header");
         
         menuToggle.addEventListener("click", () => {
             nav.classList.add("visible");
           document.body.classList.add("drawer");
-         document.header.classList.add("drawer");
+         headd.classList.add("drawer");
         })
         
         cerrar.addEventListener("click", () => {
             nav.classList.remove("visible");
           document.body.classList.remove("drawer");
-     document.header.classList.remove("drawer");
+     headd.classList.remove("drawer");
         })
 
 // add the body fadding animation
