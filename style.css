@@ -357,6 +357,15 @@ user-select: none;
 padding: 10px;
 }
 
+a{
+text-decoration:underline;
+color: black;
+}
+a:hover{
+text-decoration:none;
+color: gray;
+}
+
 @media screen and (max-width: 500px) {
 
 .wraper-ing{  
@@ -425,15 +434,6 @@ display:block;
 
 height: 28em;
 
-}
-
-a{
-text-decoration:underline;
-color: black;
-}
-a:hover{
-text-decoration:none;
-color: gray;
 }
 
 #myBtn2 {
