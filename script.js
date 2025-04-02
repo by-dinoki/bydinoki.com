@@ -11,3 +11,9 @@
         cerrar.addEventListener("click", () => {
             nav.classList.remove("visible");
         })
+
+// add the body animation
+
+ window.addEventListener(&#39;load&#39;, () =&gt; {
+      document.body.classList.add(&#39;cargado&#39;);
+    });
