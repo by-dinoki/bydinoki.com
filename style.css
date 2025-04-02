@@ -191,6 +191,12 @@ pointer-events: all;
 overflow: auto;
 }
 
+.dorian{
+
+min-height: 510px;
+
+}
+
 @media screen and (max-width: 900px) {
 
 .featured-imgo{
