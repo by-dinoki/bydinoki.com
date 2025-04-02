@@ -29,7 +29,7 @@ header {
 }
 
 header.drawer {
-position: static;
+height: 100%;
 }
 
 .logo img {
