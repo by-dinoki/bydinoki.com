@@ -7,11 +7,13 @@
         menuToggle.addEventListener("click", () => {
             nav.classList.add("visible");
           document.body.classList.add("drawer");
+         document.header.classList.add("drawer");
         })
         
         cerrar.addEventListener("click", () => {
             nav.classList.remove("visible");
           document.body.classList.remove("drawer");
+     document.header.classList.remove("drawer");
         })
 
 // add the body fadding animation
