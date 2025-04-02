@@ -348,6 +348,7 @@ min-height: 85vh;
 
 .wraper-ing{  
 width: 300px;
+pointer-events: none;
 }
 
 @media screen and (max-width: 390px) {
