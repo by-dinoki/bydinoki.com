@@ -325,7 +325,7 @@ margin-top: 20px;
 
 /* Footer Style */
   
-
+/* Page Style */
 
 body {
 transition: 0.5s;
@@ -345,6 +345,14 @@ overflow: auto;
 text-align: center;
 min-height: 85vh;
 }
+
+.wraper-ing{  
+width: 100%;
+}
+
+/* Page Style */
+
+/* Others Styles */
 
 @media screen and (max-width: 900px) {
 
@@ -738,3 +746,5 @@ opacity: 0.3;
 a.text0{
 color:black;
 }
+
+/* Others Styles */
