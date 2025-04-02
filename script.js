@@ -14,6 +14,6 @@
 
 // add the body animation
 
- window.addEventListener('load';, () =>; {
-      document.body.classList.add('cargado');
-    });
+ window.addEventListener("load";, () => {
+      document.body.classList.add("cargado");
+    })
