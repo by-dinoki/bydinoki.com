@@ -249,6 +249,7 @@ margin-top: 20px;
   }
   
   .copyright {
+   font-weight: 600;
    user-select: none;
     text-align: center;
     margin-top: 20px;
