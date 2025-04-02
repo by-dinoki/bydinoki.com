@@ -178,18 +178,14 @@ margin-top: 20px;
 /* Header Style */
 
 body {
-width: 0;
-height: 100%;
-background-color: #007bff; /* Color de barrido */
-transition: width 0.5s ease-in-out; /* Transición suave */
+opacity: 0;
 pointer-events: none;
-transition: 1s;
+transition: 0.3s;
 overflow: hidden;
     }
 
 body.cargado {
 opacity: 1;
-width: 100%;
 pointer-events: all;
 overflow: auto;
 }
