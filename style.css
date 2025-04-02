@@ -355,7 +355,7 @@ pointer-events: none;
 padding: 10px;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 500px) {
 
 .wraper-ing{  
 width: 330px;
