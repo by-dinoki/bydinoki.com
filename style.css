@@ -20,11 +20,16 @@ header {
     display: flex;
     position: sticky;
     top: 0;
+    z-index: 2;
     user-select: none;
     justify-content: space-between;
     align-items: center;
     padding: 30px 30px 24px;
     background-color: white;
+}
+
+header.drawer {
+position: static;
 }
 
 .logo img {
