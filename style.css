@@ -561,9 +561,8 @@ text-align: left;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
+  color: #b80000;
+  padding: 24px 0;
 }
 
 .footer-container {
@@ -597,16 +596,6 @@ width: max-content;
 .footer-section ul li {
   margin-bottom: 5px;
 width: max-content;
-}
-
-.footer-section a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.footer-section a:hover {
-  color: #dddddd;
-  text-decoration: none;
 }
 
 .social-icons img,
