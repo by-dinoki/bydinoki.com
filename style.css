@@ -181,7 +181,7 @@ body {
 opacity: 0;
 transform: scalex(1.2);
 pointer-events: none;
-transition: 2s;
+transition: 1.4s;
 overflow: hidden;
     }
 
