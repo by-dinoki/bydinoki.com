@@ -179,15 +179,15 @@ margin-top: 20px;
 
 body {
 opacity: 0;
-transform: rotateX(30deg);
+transform: scalex(1.2);
 pointer-events: none;
-transition: 1.5s;
+transition: 2s;
 overflow: hidden;
     }
 
 body.cargado {
 opacity: 1;
-transform: rotateX(0deg);
+transform: scalex(1);
 pointer-events: all;
 overflow: auto;
 }
