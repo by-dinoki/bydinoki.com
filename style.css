@@ -337,9 +337,8 @@ overflow: auto;
 }
 
 .dorian{
-
+text-align: center;
 min-height: 85vh;
-
 }
 
 @media screen and (max-width: 900px) {
