@@ -17,3 +17,13 @@
  window.addEventListener("load", () => {
       document.body.classList.add("cargado");
     })
+
+// Obtener la fecha actual
+    var fecha = new Date();
+
+    // Formatear la fecha (puedes personalizar el formato)
+    var opciones = { year: 'numeric'};
+    var fechaFormateada = fecha.toLocaleDateString('es-ES', opciones);
+
+    // Mostrar la fecha en el elemento span
+    document.getElementById('fechaActual').textContent = fechaFormateada;
