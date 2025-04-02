@@ -18,6 +18,9 @@ overflow: hidden;
 header {
     transition: 1s;
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
     user-select: none;
     justify-content: space-between;
     align-items: center;
@@ -347,12 +350,12 @@ min-height: 85vh;
 }
 
 .wraper-ing{  
-width: 400px;
+width: 440px;
 pointer-events: none;
 padding: 10px;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 460px) {
 
 .wraper-ing{  
 width: 330px;
