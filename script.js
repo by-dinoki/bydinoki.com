@@ -11,7 +11,7 @@
         
         cerrar.addEventListener("click", () => {
             nav.classList.remove("visible");
-          document.body.classList.add("drawer");
+          document.body.classList.remove("drawer");
         })
 
 // add the body fadding animation
