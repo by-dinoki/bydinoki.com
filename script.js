@@ -12,8 +12,8 @@
             nav.classList.remove("visible");
         })
 
-// add the body animation
+// add the body fadding animation
 
- window.addEventListener("load";, () => {
+ window.addEventListener("load", () => {
       document.body.classList.add("cargado");
     })
