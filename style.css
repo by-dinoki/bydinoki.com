@@ -1,3 +1,111 @@
+/* Header Style */
+.hlink1{
+    
+    color: #b80000;
+}
+
+header {
+    transition: 1s;
+    display: flex;
+    user-select: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px 8px;
+    background-color: white;
+}
+
+.logo img {
+    height: 50px;
+    padding-right:18px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.social a {
+    margin-left: 10px;
+}
+
+.social img {
+    height: 25px;
+}
+
+.spcin{
+    
+    display: none;
+}
+
+/* Estilos para el menú hamburguesa */
+.menu-toggle {
+    display: none; /* Oculto en pantallas grandes */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #b80000;
+    margin: 3px 0;
+}
+
+/* Estilos para pantallas más pequeñas (teléfonos) */
+@media (max-width: 880px) {
+    header {
+        justify-content: space-between;
+    }
+    
+    .spcin{
+    
+    display: block;
+}
+
+    .menu-toggle {
+        display: flex; /* Visible en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+
+.social{
+display:none;
+}
+
+    nav {
+        display: none; /* Oculta la navegación en pantallas pequeñas */
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .social {
+        margin-top: 10px;
+    }
+}
+
+/* Header Style */
+
 @media screen and (max-width: 900px) {
 
 .featured-imgo{
