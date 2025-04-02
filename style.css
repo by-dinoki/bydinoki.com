@@ -149,7 +149,16 @@ margin-top: 20px;
 
     a.hlink1{
 
-        color:white;
+        color: white;
+        text-decoration: none;
+	opacity: 1;
+	transition: 0.3s;
+    }
+
+	 a.hlink1:hover{
+
+        text-decoration: underline;
+	opacity: 0.64;
     }
 
     nav li {
