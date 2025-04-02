@@ -20,7 +20,6 @@ header {
     display: flex;
     position: sticky;
     top: 0;
-    z-index: 2;
     user-select: none;
     justify-content: space-between;
     align-items: center;
