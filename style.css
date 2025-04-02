@@ -1,4 +1,11 @@
 /* Header Style */
+        
+        body {
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+}
+
 .hlink1{
     
     color: #b80000;
@@ -50,6 +57,15 @@ nav a {
     display: none;
 }
 
+.cl0{
+    
+    display: none;
+}
+
+.nasocial{
+display:none;
+}
+
 /* Estilos para el menú hamburguesa */
 .menu-toggle {
     display: none; /* Oculto en pantallas grandes */
@@ -62,6 +78,7 @@ nav a {
     height: 3px;
     background-color: #b80000;
     margin: 3px 0;
+
 }
 
 /* Estilos para pantallas más pequeñas (teléfonos) */
@@ -75,23 +92,64 @@ nav a {
     display: block;
 }
 
+.cl0{
+    
+    display: block;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+}
+
     .menu-toggle {
         display: flex; /* Visible en pantallas pequeñas */
         margin-bottom: 10px;
     }
 
+    
+
 .social{
 display:none;
 }
 
+.nasocial{
+display:block;
+text-align: center;
+margin-top: 20px;
+}
+
     nav {
-        display: none; /* Oculta la navegación en pantallas pequeñas */
-        width: 100%;
-        margin-top: 10px;
+        opacity: 0;
+        pointer-events: none; /* Oculta la navegación en pantallas pequeñas */
+        left: 0;
+        margin-top: 0px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #b80000;
+        padding: 2.2rem 1.2rem;
+        transition: 0.3s;
+    }
+
+    nav.visible{
+
+        opacity: 1;
+        pointer-events: all; 
+
     }
 
     nav ul {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        font-size: 35px;
+    }
+
+    a.hlink1{
+
+        color:white;
     }
 
     nav li {
