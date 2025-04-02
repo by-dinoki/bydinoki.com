@@ -28,10 +28,6 @@ header {
     background-color: white;
 }
 
-header.drawer {
-height: 100%;
-}
-
 .logo img {
     height: 50px;
 }
@@ -148,7 +144,7 @@ margin-top: 20px;
     }
 
     nav.visible{
-
+        height: 90vh;
         opacity: 1;
         pointer-events: all; 
 
