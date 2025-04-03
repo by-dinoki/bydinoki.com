@@ -22,6 +22,8 @@
       document.body.classList.add("cargado");
     })
 
+window.addEventListener('load', function(){
+
 // Obtener la fecha actual
     var fecha = new Date();
 
@@ -31,3 +33,5 @@
 
     // Mostrar la fecha en el elemento span
     document.getElementById('fechaActual').textContent = fechaFormateada;
+
+ });
