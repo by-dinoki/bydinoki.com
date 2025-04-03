@@ -489,12 +489,51 @@ height: 28em;
   margin: 4px;
 }
 
+#Btn {
+     box-shadow: 0px 0px 0px 2px #b80000;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+  width: 400px;
+  transition: 0.3s;
+}
+
+#Btn:hover {
+    background-color: #b80000; /* Add a dark-grey background on hover */
+  font-size: 15px;
+  color: white;
+  box-shadow: 0px 0px 0px 1.5px rgb(225 225 225);
+}
+
+#Btnt {
+    box-shadow: 0px 0px 0px 3px #b80000;
+    color: #ffffff;
+    margin-top: 8px;
+    text-align: center;
+    padding: 15px;
+    width: 130px;
+    border-radius: 0px;
+    transition: 0.2s;
+}
+
+#Btnt:hover {
+    box-shadow: 0px 0px 0px 0px #b80000;
+    color: #dddddd;
+    background: #b80000;
+    width: 130px;
+    font-size: 12px;
+}
+
 #myBtnE {
-  box-shadow: 0px 0px 0px 2px rgb(0 0 0);
+  box-shadow: 0px 0px 0px 2px #b80000;
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: white; /* Set a background color */
-  color: black; /* Text color */
+  background-color: transparent; /* Set a background color */
+  color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   font-size: 18px; /* Increase font size */
@@ -503,7 +542,7 @@ height: 28em;
 }
 
 #myBtnE:hover {
-  background-color: black; /* Add a dark-grey background on hover */
+  background-color: #b80000; /* Add a dark-grey background on hover */
   font-size: 15px;
   color: white;
   box-shadow: 0px 0px 0px 1.5px rgb(225 225 225);
