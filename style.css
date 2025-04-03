@@ -92,7 +92,7 @@ display:none;
 }
 
 /* Estilos para pantallas más pequeñas (teléfonos) */
-@media (max-width: 880px) {
+@media (max-width: 1000px) {
     header {
         justify-content: space-between;
     }
