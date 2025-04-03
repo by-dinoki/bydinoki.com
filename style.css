@@ -373,14 +373,15 @@ text-decoration:none;
 color: gray;
 }
 
-@media screen and (min-width: 880px) {
+
+@media screen and (max-width: 880px) {
 
 .wraper-ing{  
 width: 70vw;
 }
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (min-width: 1090px) {
 
 .wraper-ing{  
 width: 85vw;
