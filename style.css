@@ -350,8 +350,15 @@ padding: 0 10vw;
 min-height: 60vh;
 }
 
+h1{
+font-size:2em;
+margin:.67em 0;
+font-weight:900;
+font-size:35px;
+}
+
 .wraper-ing{  
-width: 80vw;
+width: 45vw;
 pointer-events: none;
 user-select: none;
 padding: 10px;
@@ -366,14 +373,7 @@ text-decoration:none;
 color: gray;
 }
 
-h1{
-font-size:2em;
-margin:.67em 0;
-font-weight:900;
-font-size:35px;
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1090px) {
 
 .wraper-ing{  
 width: 85vw;
