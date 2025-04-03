@@ -377,14 +377,14 @@ color: gray;
 @media screen and (max-width: 880px) {
 
 .wraper-ing{  
-width: 70vw;
+width: 80vw;
 }
 }
 
 @media screen and (min-width: 1090px) {
 
 .wraper-ing{  
-width: 85vw;
+width: 45%;
 }
 }
 
