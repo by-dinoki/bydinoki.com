@@ -21,9 +21,11 @@ function is_vimeolink(url,el) {
                 el.addEventListener("click", function(event) {
                     event.preventDefault();
                     document.getElementById('lightbox').innerHTML = '<a id="close"></a><a id="next">&rsaquo;</a><a id="prev">&lsaquo;</a><div class="videoWrapperContainer"><div class="videoWrapper"><iframe src="https://player.vimeo.com/video/'+el.getAttribute('data-id')+'/?autoplay=1&byline=0&title=0&portrait=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
-                    document.getElementById('lightbox').style.display = 'block';
-
+                    document.getElementById('lightbox').style.visibility = 'visible';
+                    document.getElementById('lightbox').style.pointerEvents = 'all';
+                    document.getElementById('lightbox').style.opacity = '1';
                     setGallery(this);
+                
                 });
             }
             else if (xmlhttp.status == 400) {
@@ -38,6 +40,7 @@ function is_vimeolink(url,el) {
     xmlhttp.send();
 }
 function setGallery(el) {
+    document.body.classList.add("drawer");
     var elements = document.body.querySelectorAll(".gallery");
     elements.forEach(element => {
         element.classList.remove('gallery');
@@ -109,8 +112,11 @@ document.addEventListener("DOMContentLoaded", function() {
     //remove the clicked lightbox
     document.getElementById('lightbox').addEventListener("click", function(event) {
         if(event.target.id != 'next' && event.target.id != 'prev'){
-            this.innerHTML = '';
-            document.getElementById('lightbox').style.display = 'none';
+            // delete all html lightbox elements: this.innerHTML = '';
+            document.getElementById('lightbox').style.pointerEvents = 'none';
+            document.getElementById('lightbox').style.visibility = 'hidden';
+            document.getElementById('lightbox').style.opacity = '0';
+            document.body.classList.remove("drawer");
         }
     });
     
@@ -120,7 +126,9 @@ document.addEventListener("DOMContentLoaded", function() {
         element.addEventListener("click", function(event) {
             event.preventDefault();
             document.getElementById('lightbox').innerHTML = '<a id="close"></a><a id="next">&rsaquo;</a><a id="prev">&lsaquo;</a><div class="videoWrapperContainer"><div class="videoWrapper"><iframe src="https://www.youtube.com/embed/'+this.getAttribute('data-id')+'?autoplay=1&showinfo=0&rel=0"></iframe></div>';
-            document.getElementById('lightbox').style.display = 'block';
+            document.getElementById('lightbox').style.visibility = 'visible';
+            document.getElementById('lightbox').style.pointerEvents = 'all';
+            document.getElementById('lightbox').style.opacity = '1';
 
             setGallery(this);
         });
@@ -131,8 +139,10 @@ document.addEventListener("DOMContentLoaded", function() {
     elements.forEach(element => {
         element.addEventListener("click", function(event) {
             event.preventDefault();
-            document.getElementById('lightbox').innerHTML = '<a id="close"></a><a id="next">&rsaquo;</a><a id="prev">&lsaquo;</a><div class="img" style="background: url(\''+this.getAttribute('href')+'\') center center / contain no-repeat;" title="'+this.getAttribute('title')+'" ><img src="'+this.getAttribute('href')+'" alt="'+this.getAttribute('title')+'" /></div><span>'+this.getAttribute('title')+'</span>';
-            document.getElementById('lightbox').style.display = 'block';
+            document.getElementById('lightbox').innerHTML = '<a id="close"></a><a id="next">&rsaquo;</a><a id="prev">&lsaquo;</a><div class="img" style="background: url(\''+this.getAttribute('href')+'\') center center / contain no-repeat;" ><img src="'+this.getAttribute('href')+'" alt="'+this.getAttribute('title')+'" /></div><span>'+this.getAttribute('title')+'</span>';
+            document.getElementById('lightbox').style.visibility = 'visible';
+            document.getElementById('lightbox').style.pointerEvents = 'all';
+            document.getElementById('lightbox').style.opacity = '1';
 
             setGallery(this);
         });

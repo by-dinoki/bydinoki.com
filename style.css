@@ -23,7 +23,7 @@ header {
     user-select: none;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 30px 24px;
+    padding: 30px 30px 20px;
     background-color: white;
 }
 
@@ -63,7 +63,7 @@ nav a:hover {
 }
 
 .spcin{
-    
+  margin-left: 0;
     display: none;
 }
 
@@ -98,7 +98,7 @@ display:none;
     }
     
     .spcin{
-    
+    margin-left: 15px;
     display: block;
 }
 
@@ -129,12 +129,11 @@ margin-top: 20px;
 }
 
     nav {
-        height: 100vh;
         opacity: 0;
         pointer-events: none; /* Oculta la navegación en pantallas pequeñas */
         left: 0;
         margin-top: 0px;
-        position: absolute;
+        position: fixed;
         top: 0;
         bottom: 0;
         right: 0;
@@ -153,7 +152,7 @@ margin-top: 20px;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 1rem;
+        gap: 0.5rem;
         font-size: 32px;
     }
 
@@ -344,10 +343,26 @@ pointer-events: all;
 overflow: auto;
 }
 
+img{
+
+  -webkit-user-drag: none;
+
+}
+
+.titling {
+color:#b80000;
+
+}
+
+marc {
+background-color: yellow;
+color: black;
+}
+
 .dorian{
 text-align: center;
 padding: 0 10vw;
-min-height: 60vh;
+min-height: 60vh;  
 }
 
 h1{
@@ -355,6 +370,12 @@ font-size:2em;
 margin:.67em 0;
 font-weight:900;
 font-size:35px;
+}
+
+.cc {
+  margin: 1.5px;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .wraper-ing{  
@@ -687,12 +708,6 @@ width: max-content;
 
 .web-view{
 flex: none;
-}
-
-.live3{
-
-
-
 }
 
 @media screen and (max-width: 1035px) {

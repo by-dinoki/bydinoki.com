@@ -1,0 +1,14 @@
+User-agent: Mediapartners-Google
+Disallow:
+
+User-agent: *
+Disallow: /404.html
+Disallow: /*.html?m=1$
+Disallow: /*?m=1$
+Disallow: /*.css
+Disallow: /*.js
+Disallow: /*.html
+Disallow: /res/*/*
+Allow: /
+
+Sitemap: https://bydinoki.com/sitemap.xml
