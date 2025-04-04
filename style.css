@@ -1,0 +1,816 @@
+/* Header Style */
+        
+        body {
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+}
+
+body.drawer, body.cargado.drawer{
+overflow: hidden;
+}
+
+.hlink1{
+    
+    color: #b80000;
+}
+
+header {
+    transition: 1s;
+    display: flex;
+    position: sticky;
+    top: 0;
+    user-select: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px 24px;
+    background-color: white;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #b80000;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #b80000;
+}
+
+.social a {
+    margin-left: 10px;
+}
+
+.social img {
+    height: 25px;
+}
+
+.spcin{
+    
+    display: none;
+}
+
+.cl0{
+    
+    display: none;
+}
+
+.nasocial{
+display:none;
+}
+
+/* Estilos para el menú hamburguesa */
+.menu-toggle {
+    display: none; /* Oculto en pantallas grandes */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #b80000;
+    margin: 3px 0;
+
+}
+
+/* Estilos para pantallas más pequeñas (teléfonos) */
+@media (max-width: 1000px) {
+    header {
+        justify-content: space-between;
+    }
+    
+    .spcin{
+    
+    display: block;
+}
+
+.cl0{
+    
+    display: block;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+}
+
+    .menu-toggle {
+        display: flex; /* Visible en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+
+    
+
+.social{
+display:none;
+}
+
+.nasocial{
+display:block;
+text-align: center;
+margin-top: 20px;
+}
+
+    nav {
+        height: 100vh;
+        opacity: 0;
+        pointer-events: none; /* Oculta la navegación en pantallas pequeñas */
+        left: 0;
+        margin-top: 0px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #b80000;
+        padding: 2.25rem 1.25rem;
+        transition: 0.3s;
+    }
+
+    nav.visible{
+        opacity: 1;
+        pointer-events: all; 
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        font-size: 32px;
+    }
+
+    a.hlink1{
+
+        color: white;
+        text-decoration: none;
+	opacity: 1;
+	transition: 0.3s;
+    }
+
+	 a.hlink1:hover{
+        color: white;
+        text-decoration: underline;
+	opacity: 0.55;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .social {
+        margin-top: 10px;
+    }
+}
+
+/* Header Style */
+
+/* Footer Style */
+
+.bydinoki2{
+  
+  text-align: left;
+  
+  }
+  
+  .wear1{
+  pointer-events: none;
+  user-select: none;
+  text-align: left;
+      font-size: 40px;
+      margin: 1px 50px;
+  }
+  
+  footer {
+    color: #b80000;
+    padding: 24px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+  user-select: none;
+      font-size: 18px;
+    min-width: 200px;
+    margin-bottom: 20px;
+  text-align: left;
+  margin-left: 1px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+  width: max-content;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  width: max-content;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  width: max-content;
+  }
+  
+  .footer-section a {
+    color: #b80000;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    color: #b80000;
+    text-decoration: underline;
+  }
+  
+  .social-icons img,
+  .app-stores img,
+  .payment-methods img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .copyright {
+   font-weight: 600;
+   font-size: smaller;
+   user-select: none;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px 0 0;
+  }
+  
+  .web-view{
+  flex: none;
+  }
+
+  
+  @media screen and (max-width: 1035px) {
+  
+  .footer-container{
+  justify-content: center;
+  }
+  
+  }
+  
+  a.dink1{
+   margin-left: 35px;
+  }
+  
+  @media screen and (max-width: 700px) {
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  flex-direction: column;
+  }
+  
+  .live3{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .bydinoki2{
+  
+  text-align: center;
+  
+  }
+  
+  
+  a.dink1{
+  
+  margin-left: -16px;
+  
+  }
+  
+  
+  .wear1{
+  text-align: center;
+      font-size: 30px;
+      margin: 0px 50px;
+  }
+  
+  .footer-section{
+      text-align: -webkit-center;
+  margin-left: 10px;
+  }
+  
+  }
+
+/* Footer Style */
+  
+/* Page Style */
+
+body {
+transition: 0.7s;
+opacity: 0;
+pointer-events: none;
+overflow: hidden;
+    }
+
+body.cargado {
+transition: 0.7s;
+opacity: 1;
+pointer-events: all;
+overflow: auto;
+}
+
+.dorian{
+text-align: center;
+padding: 0 10vw;
+min-height: 60vh;
+}
+
+h1{
+font-size:2em;
+margin:.67em 0;
+font-weight:900;
+font-size:35px;
+}
+
+.wraper-ing{  
+width: 45vw;
+pointer-events: none;
+user-select: none;
+padding: 10px;
+}
+
+a{
+text-decoration:underline;
+color: black;
+}
+a:hover{
+text-decoration:none;
+color: gray;
+}
+
+
+@media screen and (max-width: 880px) {
+
+.wraper-ing{  
+width: 80vw;
+}
+}
+
+@media screen and (min-width: 1090px) {
+
+.wraper-ing{  
+width: 45%;
+}
+}
+
+/* Page Style */
+
+/* Others Styles */
+
+@media screen and (max-width: 900px) {
+
+.featured-imgo{
+
+height: 180px;
+
+}
+
+h2.toot {
+font-size:40px;
+}
+
+.toot2 {
+font-size:20px;
+
+}
+
+}
+
+#main-cell{
+display:block;
+}
+
+.archives0 {
+  background: #b80000;
+  padding: 0 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+}
+
+.archives0 a {
+
+  color: white;
+  opacity:1;
+}
+
+.archives0 a:hover {
+
+  color: white;
+  opacity:0.3;
+}
+
+.padin-red {
+       margin: 0 15px;
+    }
+
+.featured-imgo{
+
+height: 28em;
+
+}
+
+#myBtn2 {
+  box-shadow: 0px 0px 0px 2px rgb(0 0 0);
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  font-size: 18px; /* Increase font size */
+  transition: 0.3s;
+}
+
+#myBtn2:hover {
+  background-color: black; /* Add a dark-grey background on hover */
+  color: white;
+  box-shadow: 0px 0px 0px 1.5px rgb(225 225 225);
+}
+
+.flex-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 4px;
+}
+
+#Btn {
+     box-shadow: 0px 0px 0px 2px #b80000;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+  width: 400px;
+  transition: 0.3s;
+}
+
+#Btn:hover {
+    background-color: #b80000; /* Add a dark-grey background on hover */
+  font-size: 15px;
+  color: white;
+  box-shadow: 0px 0px 0px 1.5px rgb(225 225 225);
+}
+
+#Btnt {
+    box-shadow: 0px 0px 0px 3px #b80000;
+    color: #ffffff;
+    margin-top: 8px;
+    text-align: center;
+    padding: 15px;
+    width: 130px;
+    border-radius: 0px;
+    transition: 0.2s;
+}
+
+#Btnt:hover {
+    box-shadow: 0px 0px 0px 0px #b80000;
+    color: #dddddd;
+    background: #b80000;
+    width: 130px;
+    font-size: 12px;
+}
+
+#myBtnE {
+  box-shadow: 0px 0px 0px 2px #b80000;
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: transparent; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  font-size: 18px; /* Increase font size */
+  width: 400px;
+  transition: 0.3s;
+}
+
+#myBtnE:hover {
+  background-color: #b80000; /* Add a dark-grey background on hover */
+  font-size: 15px;
+  color: white;
+  box-shadow: 0px 0px 0px 1.5px rgb(225 225 225);
+}
+
+.padin-red {
+       margin: 0 15px;
+    }
+
+ #char1 {
+       width:60%;
+pointer-events: none;
+    }
+
+@media screen and (max-width: 500px) {
+    #char1 {
+       width:100%;
+    }
+
+#myBtnE{
+width: -webkit-fill-available;
+margin: 0 20px;
+}
+
+}
+
+  a.byd1 {
+  font-size: 16px;
+    color: black;
+    transition: 0.3s;
+  }
+  
+  .byd1:hover {
+    color: grey;
+  font-size: 14px;
+  }
+
+  .qn1 {
+     width: 32px;
+    height: 32px;
+opacity: 1;
+transform: translateY(0px);
+    transition: 0.3s;
+  }
+  
+  .qn1:hover {
+        width: 25px;
+    height: 25px;
+opacity: 0.5;
+transform: translateY(5px);
+
+  }
+
+  .ddi {
+    color: blue;
+    transition: 0.3s;
+  }
+  
+  .ddi:hover {
+    color: grey;
+  }
+
+img.main-logo{
+    transition: 0.2s;
+opacity: 1;
+  }
+  
+  img.main-logo:hover {
+opacity: 0.3;
+
+  }
+
+notdrag {
+pointer-events: none; 
+}
+
+.bydinoki2{
+
+text-align: left;
+
+}
+
+.wear1{
+pointer-events: none;
+user-select: none;
+text-align: left;
+    font-size: 40px;
+    margin: 1px 50px;
+}
+
+footer {
+  color: #b80000;
+  padding: 24px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+user-select: none;
+    font-size: 18px;
+  min-width: 200px;
+  margin-bottom: 20px;
+text-align: left;
+margin-left: 1px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+width: max-content;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+width: max-content;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+width: max-content;
+}
+
+.social-icons img,
+.app-stores img,
+.payment-methods img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.copyright {
+ user-select: none;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.web-view{
+flex: none;
+}
+
+.live3{
+
+
+
+}
+
+@media screen and (max-width: 1035px) {
+
+.footer-container{
+justify-content: center;
+}
+
+}
+
+a.dink1{
+ margin-left: 35px;
+}
+
+@media screen and (max-width: 700px) {
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+flex-direction: column;
+}
+
+.live3{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.bydinoki2{
+
+text-align: center;
+
+}
+
+
+a.dink1{
+
+margin-left: -16px;
+
+}
+
+
+.wear1{
+text-align: center;
+    font-size: 30px;
+    margin: 0px 50px;
+}
+
+.footer-section{
+    text-align: -webkit-center;
+margin-left: 10px;
+}
+
+}
+
+.myButton {
+	background-color:#ff1100;
+	border-radius:15px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding: 15px 45px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#ba0c00;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.thecard{
+
+background-color: white;
+border:5px solid black;
+margin: 20px;
+padding: 8px;
+
+}
+
+#myBtn {
+  box-shadow: 0px 0px 0px 2px #ffffff;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #b80000; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px 15px 10px; /* Some padding */
+  font-size: 18px; /* Increase font size */
+  transition: 0.2s;
+}
+
+#myBtn:hover {
+  box-shadow: 0px 0px 0px 1.0px #dfdfdf;
+  background-color: #8b0000;
+}
+
+#myBtn:hover img {
+  transition: 0.2s;
+opacity: 0.3;
+}
+
+a.text0{
+color:black;
+}
+
+/* Others Styles */
