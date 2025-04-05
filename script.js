@@ -4,7 +4,7 @@ const nombre = "bydinoki.com";
 
 var url = window.location.toString();
 
-if (url.contains("bydinoki.github.io")) {
+if (url === "bydinoki.github.io") {
 
   window.location = url.replace('bydinoki.github.io', nombre);
 
