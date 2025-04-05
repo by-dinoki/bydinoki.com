@@ -1,8 +1,8 @@
-// tries the header bar...
+// tries the header bar
 
- const nav = document.querySelector("nav");
-        const menuToggle = document.querySelector(".menu-toggle");
-        const cerrar = document.querySelector(".cl0");
+  nav = document.querySelector("nav");
+         menuToggle = document.querySelector(".menu-toggle");
+         cerrar = document.querySelector(".cl0");
         
         menuToggle.addEventListener("click", () => {
             nav.classList.add("visible");
