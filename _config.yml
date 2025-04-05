@@ -8,7 +8,7 @@ description: >- # this means to ignore newlines until "baseurl:"
  #BYDINOKI es una página básica que ofrece todas las Noticias
  y Novedades para Dinoki ON y toda su trayectoria en un Sitio Web.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://bydinoki.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://bydinoki.onrender.com" # the base hostname & protocol for your site, e.g. http://example.com
 iglink: "https://instagram.com/dinoki_0n"
 ytlink:  "https://youtube.com/channel/UCmf1ZezKYhGjPGR1eZUuDlw"
 
