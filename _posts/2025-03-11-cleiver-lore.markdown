@@ -6,7 +6,7 @@ image: "/res/images/TnyXnclei.jpeg"
 date:   2025-03-11 17:00:00 -0600
 ---
 
-[<img alt="Cleiver" title="" src="/res/images/TnyXnclei.jpeg">](/res/images/TnyXnclei.jpeg)
+[<img alt="Cleiver" style="width: 300px;" src="/res/images/TnyXnclei.jpeg">](/res/images/TnyXnclei.jpeg)
 
 Era el primer día de secundaria para Cleiver y estaba emocionado de ver esa escuela... Cleiver se presento frente a sus compañeros y la maestra, estaba feliz... Hasta que algunos de sus compañeros de clase Cleiver lo miraron extraño porque sus ojos eran de un color muy diferente, y además de eso sus ojos cambiaron de color... Hasta ahora Cleiver no podía entender lo que estaba pasando, hasta que se dio cuenta que se estaban burlando de algo y él no sabía qué era.
 
