@@ -5,19 +5,26 @@ layout: page
 image: "https://bydinoki.com/res/branding/thumbnaill.jpg"
 ---
 
-<h1>Posts</h1>
+<h1 class="ptit">Posts Recientes</h1>
 
 {% for post in site.posts %}
  <div>
 
     
-    <a style="text-decoration: none; color: black;" href="{{ post.url | relative_url }}">   
+    <a class="referl" style="text-decoration: none; color: black;" href="{{ post.url | relative_url }}">   
         <h2 class="tile">{{post.title}}</h2>
-        {% include postdates.html date=post.date time-attributes='class="post-date"' %}
+
+        {% include postdates.html date=post.date time-attributes='class="post-date"' %} <br/>
+
         <p class="desk">{{post.description}}</p>
+        {% if post.image != emphy %}
+
        <img class="my-image" src="{{ post.image }}">
-      </a> 
-<br/><br/>
+       <br/>
+       {% endif %}
+
+      </a>
+      <br/><br/>
 </div>
 {% endfor %}
 
@@ -28,25 +35,38 @@ image: "https://bydinoki.com/res/branding/thumbnaill.jpg"
 
 <style>
 .dorian{
-    padding-right: 35vw;
+    margin: 0 15vw auto;
+    padding: 0px;
     text-align: left;
    }
 
    .tile {
+    font-size: 30px;
     margin: 12px 0px 2px;
+    width: fit-content;
 }
 
 .my-image {
-    width: 250px;
+    width: 300px;
     height: 230px;
     object-fit: cover;
+
+}
+
+.referl{
+    width: 85%;
+    display: contents;
+}
+
+.ptit{
+margin: 8px 0 35px 0px;
 
 }
 
 @media (max-width: 700px) {
 
 .dorian {
-    padding-right: 10px;
+    margin: 0 10vw;
 
 }
 
