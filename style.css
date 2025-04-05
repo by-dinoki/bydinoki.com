@@ -343,12 +343,6 @@ pointer-events: all;
 overflow: auto;
 }
 
-img{
-
-  -webkit-user-drag: none;
-
-}
-
 .titling {
 color:#b80000;
 
@@ -392,6 +386,27 @@ color: black;
 a:hover{
 text-decoration:none;
 color: gray;
+}
+
+br{
+user-select: none;
+
+}
+
+img{
+  -webkit-user-drag: none;
+  object-fit: contain;
+  max-width: 550px;
+  height: auto;
+}
+
+@media (max-width: 1000px) {
+ 
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
 }
 
 

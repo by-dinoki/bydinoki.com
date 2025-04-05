@@ -1,0 +1,38 @@
+---
+title: Post de Dinoki ON
+description: El Blog de Dinoki ON.
+layout: page
+image: "https://bydinoki.com/res/branding/thumbnaill.jpg"
+---
+
+<h1>Posts</h1>
+
+{% for post in site.posts %}
+ <div>
+
+    
+    <a style="text-decoration: none; color: black;" href="{{ post.url | relative_url }}">   
+        <h2 class="tile">{{post.title}}</h2>
+        {% include postdates.html date=post.date time-attributes='class="post-date"' %}
+        <p class="desk">{{post.description}}</p>
+       <img class="my-image" src="{{ post.image }}">
+      </a> 
+<br/><br/>
+</div>
+{% endfor %}
+
+<p><i>-- ¿Buscas los demás post? Ve a: <a target="_blank" rel="noopener noreferrer" href="https://vlog.bydinoki.com">vlog.bydinoki.com</a></i></p>
+
+
+</div>
+
+<style>
+.dorian{
+    text-align: left;
+   }
+
+   .tile {
+    margin: 12px 0px 2px;
+}
+
+</style>

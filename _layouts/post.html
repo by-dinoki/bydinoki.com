@@ -14,12 +14,31 @@
 <div class="dorian">
     
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title }}</h1>
-
-    <br/>
+    {% include dates.html date=post.date time-attributes='class="post-date"' %}
 
 {{ content }}
 
+<br/>
+
+{%- include share.html -%}
+
 </div>
+
+<style>
+    .post-title{
+margin: 12px 0px 8px;
+font-weight: 700;
+user-select: none;
+    }
+
+    .post-date{
+user-select: none;
+    }
+
+.dorian{
+    text-align: left;
+   }
+</style>
 
 {%- include deploi.html -%}
 {%- include foot.html -%}
