@@ -1,16 +1,3 @@
-// redirect the gh-pages
-  
-const nombre = "bydinoki.com";
-
-var url = window.location.toString();
-
-if (url === "bydinoki.github.io") {
-
-  window.location = url.replace('bydinoki.github.io', nombre);
-
-}
-
-
 // tries the header bar...
 
  const nav = document.querySelector("nav");
