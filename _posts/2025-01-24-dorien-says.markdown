@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dorien Says..."
-description: "LLEGA EL NUEVO PERSONAJE DE UN UNIVERSO ALTERNATIVO, NO TE LO PIERDAS!!!"
+description: "Dorien says: Compartí una foto mía sin máscara..."
 image: "/res/images/dori20251.jpg"
 date:   2025-01-24 11:30:00 -0600
 ---

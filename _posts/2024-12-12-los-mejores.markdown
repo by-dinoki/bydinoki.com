@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Los Mejores"
-description: "Welcome to my #BYDINOKI.com blogging !"
+description: "No se pierda de nuestro nuevo sencillo &quot;los mejores&quot; Se trata de que unos amigos llamados pepe y lechis, en donde yo el compa Dinoki Dani flou, está para sus mentadas aventuras y por ser unos compadres de bien..."
 image: "https://i.ibb.co/LPZtMg1/cayeyemiacantin.png"
 date:   2024-12-10 12:00:00 -0600
 ---
