@@ -798,6 +798,11 @@ padding: 8px;
 
 }
 
+button{
+  font-family: 'Poppins';
+
+}
+
 #myBtn {
   box-shadow: 0px 0px 0px 2px #ffffff;
   position: fixed; /* Fixed/sticky position */
