@@ -11,6 +11,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bydinoki.onrender.com" # the base hostname & protocol for your site, e.g. http://example.com
 iglink: "https://instagram.com/dinoki_0n"
 ytlink:  "https://youtube.com/channel/UCmf1ZezKYhGjPGR1eZUuDlw"
+cseos: ""
 
 
 # Build settings
