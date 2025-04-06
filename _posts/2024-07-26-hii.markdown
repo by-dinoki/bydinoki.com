@@ -9,7 +9,7 @@ date:   2024-07-26 00:55:00 -0600
 <p style="text-align: left;">This is the Dinoki Blog !</p>
   
   <div class="separator" style="clear: both; text-align: left;">
-    <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU3VYYQ51WJ2HTFUfH3UzLMnk6GG7vqc-rrby6rMtFANO9ZNmnIunjwCj4Up8jloKlYzwx7a0vGYmmK-hGloWENK3rQkLwqFZ4Mtfq7tdsXMrThwTPJWb4tEFDwydtUbzAwp2PQ1OWyoQ8e7enQkbA0lU5sLkQG31OlV8xoxt7GbHaIuKbvDq_74w9Y8bF/s1600/263%20sin%20t%C3%ADtulo_20240709235751.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
+    <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU3VYYQ51WJ2HTFUfH3UzLMnk6GG7vqc-rrby6rMtFANO9ZNmnIunjwCj4Up8jloKlYzwx7a0vGYmmK-hGloWENK3rQkLwqFZ4Mtfq7tdsXMrThwTPJWb4tEFDwydtUbzAwp2PQ1OWyoQ8e7enQkbA0lU5sLkQG31OlV8xoxt7GbHaIuKbvDq_74w9Y8bF/s1600/263%20sin%20t%C3%ADtulo_20240709235751.jpg" imageanchor="1">
       
       <img border="0" draggable="false" data-original-height="256" data-original-width="256" height="256" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU3VYYQ51WJ2HTFUfH3UzLMnk6GG7vqc-rrby6rMtFANO9ZNmnIunjwCj4Up8jloKlYzwx7a0vGYmmK-hGloWENK3rQkLwqFZ4Mtfq7tdsXMrThwTPJWb4tEFDwydtUbzAwp2PQ1OWyoQ8e7enQkbA0lU5sLkQG31OlV8xoxt7GbHaIuKbvDq_74w9Y8bF/s1600/263%20sin%20t%C3%ADtulo_20240709235751.jpg" width="256"/>
     </a></div>
