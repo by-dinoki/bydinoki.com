@@ -8,4 +8,4 @@ date:   2025-01-01 00:00:00 -0600
 
 Welcome to my #BYDINOKI.com blogging !
 
-[<img alt=" " title="" src="/res/branding/thumbnaill.jpg">](/res/branding/thumbnaill.jpg)
+[<img alt=" " title="" style="width: 300px;" src="/res/branding/thumbnaill.jpg">](/res/branding/thumbnaill.jpg)

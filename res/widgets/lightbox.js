@@ -20,7 +20,7 @@ function is_vimeolink(url,el) {
 
                 el.addEventListener("click", function(event) {
                     event.preventDefault();
-                    document.getElementById('lightbox').innerHTML = '<a id="close"></a><a id="next">&rsaquo;</a><a id="prev">&lsaquo;</a><div class="videoWrapperContainer"><div class="videoWrapper"><iframe src="https://player.vimeo.com/video/'+el.getAttribute('data-id')+'/?autoplay=1&byline=0&title=0&portrait=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
+                    document.getElementById('lightbox').innerHTML = '<a id="next">&gt;</a><a id="prev">&lt;</a><div class="videoWrapperContainer"><div class="videoWrapper"><iframe src="https://player.vimeo.com/video/'+el.getAttribute('data-id')+'/?autoplay=1&byline=0&title=0&portrait=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
                     document.getElementById('lightbox').style.visibility = 'visible';
                     document.getElementById('lightbox').style.pointerEvents = 'all';
                     document.getElementById('lightbox').style.opacity = '1';
@@ -104,7 +104,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 var filename = href.split('/').pop();
                 var split = filename.split(".");
                 var name = split[0];
-                element.setAttribute('title',name);
             }
         }
     });
@@ -125,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
     elements.forEach(element => {
         element.addEventListener("click", function(event) {
             event.preventDefault();
-            document.getElementById('lightbox').innerHTML = '<a id="close"></a><a id="next">&rsaquo;</a><a id="prev">&lsaquo;</a><div class="videoWrapperContainer"><div class="videoWrapper"><iframe src="https://www.youtube.com/embed/'+this.getAttribute('data-id')+'?autoplay=1&showinfo=0&rel=0"></iframe></div>';
+            document.getElementById('lightbox').innerHTML = '<a id="next">&gt;</a><a id="prev">&lt;</a><div class="videoWrapperContainer"><div class="videoWrapper"><iframe src="https://www.youtube.com/embed/'+this.getAttribute('data-id')+'?autoplay=1&showinfo=0&rel=0"></iframe></div>';
             document.getElementById('lightbox').style.visibility = 'visible';
             document.getElementById('lightbox').style.pointerEvents = 'all';
             document.getElementById('lightbox').style.opacity = '1';
@@ -139,11 +138,10 @@ document.addEventListener("DOMContentLoaded", function() {
     elements.forEach(element => {
         element.addEventListener("click", function(event) {
             event.preventDefault();
-            document.getElementById('lightbox').innerHTML = '<a id="close"></a><a id="next">&rsaquo;</a><a id="prev">&lsaquo;</a><div class="img" style="background: url(\''+this.getAttribute('href')+'\') center center / contain no-repeat;" ><img src="'+this.getAttribute('href')+'" alt="'+this.getAttribute('title')+'" /></div><span>'+this.getAttribute('title')+'</span>';
+            document.getElementById('lightbox').innerHTML = '<a id="next">&gt;</a><a id="prev">&lt;</a><div class="img" style="background: url(\''+this.getAttribute('href')+'\') center center / contain no-repeat;" ><img src="'+this.getAttribute('href')+'" alt="'+this.getAttribute('title')+'" /></div><span>'+this.getAttribute('title')+'</span>';
             document.getElementById('lightbox').style.visibility = 'visible';
             document.getElementById('lightbox').style.pointerEvents = 'all';
             document.getElementById('lightbox').style.opacity = '1';
-
             setGallery(this);
         });
     });
