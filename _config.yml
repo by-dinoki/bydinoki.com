@@ -9,7 +9,7 @@ description: >- # this means to ignore newlines until "baseurl:"
  y Novedades para Dinoki ON y toda su trayectoria en un Sitio Web.
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: /post/:title
-url: "https://bydinoki.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://bydinoki.com" # the base hostname & protocol for your site, e.g. http://example.com
 iglink: "https://instagram.com/dinoki_0n"
 ytlink:  "https://youtube.com/channel/UCmf1ZezKYhGjPGR1eZUuDlw"
 cseos: ""
