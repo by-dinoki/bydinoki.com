@@ -371,7 +371,7 @@ min-height: 60vh;
 }
 
 h1{
-  font-size: 0.85em;
+  font-size: 1.85em !important;
 }
 
 }
