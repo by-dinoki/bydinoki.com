@@ -435,6 +435,7 @@ transition: 0.7s;
 opacity: 0;
 pointer-events: none;
 user-select: none;
+overflow: hidden;
     }
 
 body.cargado {
