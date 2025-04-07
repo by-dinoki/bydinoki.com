@@ -1,4 +1,80 @@
 /* Header Style */
+
+/* Navbar container */
+.navebar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navebar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #b80000;
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  padding: 0;
+}
+
+/* Add a red background color to navbar links on hover */
+.navebar a:hover, .dropdown:hover {
+  color: #8b0000;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  background: white;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: 0.3s;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #b80000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: 0.3s;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ececec;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  pointer-events: all;
+}
         
         body {
     font-family: poppins;
@@ -117,7 +193,28 @@ display:none;
         margin-bottom: 10px;
     }
 
+    .dropdown .dropbtn {
+      color: white;
+    }
+
+    .dropdown .dropbtn:hover {
+      text-decoration: underline;
+    }
+
+    .dropdown-content{
+
+      width: -webkit-fill-available;
+      top: 0;
+      left: 0;
+      font-size: 32px;
+
+    }
     
+    .dropdown-content a{
+
+      text-align: center;
+
+    }
 
 .social{
 display:none;
@@ -362,6 +459,27 @@ padding: 2px 10vw;
 min-height: 60vh;  
 }
 
+input {
+  border: 0;
+  padding: 16px 20px;
+  box-shadow: 0px 0px 0px 2px #b80000;
+}
+
+input[type=text]:focus {
+  border: 0;
+  outline: none;
+
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+ li {
+  margin-bottom: 0.5rem;
+}
+
 @media only screen and (max-width: 630px) {
          
   .dorian{
@@ -376,7 +494,7 @@ h1{
 font-size:2em;
 margin:.35em 0;
 font-weight:900;
-font-size:35px;
+font-size:32px;
 }
 
 .cc {

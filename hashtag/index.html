@@ -1,0 +1,31 @@
+---
+title: "Hashtags"
+description: "Los hashtags de Dinoki ON"
+layout: page
+image: "https://bydinoki.com/res/branding/thumbnaill.jpg"
+---
+
+<div>
+    <div class="break-inside-avoid-column">
+         <h1 style="font-size: 40px;"><span style="color:#b80000; font-size: 60px; margin: 0px;"># </span>HASHTAGS</h1>
+      <ul style="margin: 0; font-size: 30px;" class="hashtags">
+
+        {% for tag in site.tags %}
+        <li class="hashtags" style="margin-top: 12px;">
+          <a href="{{ tag[0] }}" class="hashtags">#{{ tag[0] }}</a>
+        </li>
+        {% endfor %}
+
+      </ul>
+    </div>
+
+    <style>
+footer {
+    display: none;
+}
+
+.dorian{
+  user-select: none;
+}
+
+    </style>

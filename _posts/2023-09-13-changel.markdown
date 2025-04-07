@@ -4,6 +4,8 @@ title:  "El Jueves, llega un nuevo personaje del muy muy lejano (Changel)"
 description: "LLEGA EL NUEVO PERSONAJE DE UN UNIVERSO ALTERNATIVO, NO TE LO PIERDAS!!!"
 image: "/res/images/changel.png"
 date:   2023-09-13 11:30:00 -0600
+tags:
+  - comunicado
 ---
 
 <p style="text-align: left;">

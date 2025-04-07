@@ -4,6 +4,8 @@ title:  "Cleiver's Lore"
 description: "Era el primer día de secundaria para Cleiver y estaba emocionado de ver esa escuela... Cleiver se presento frente a sus compañeros y la maestra, estaba feliz..."
 image: "/res/images/TnyXnclei.jpeg"
 date:   2025-03-11 17:00:00 -0600
+tags: 
+  - bydinoki
 ---
 
 [<img alt="Cleiver" title="" style="width: 300px;" src="/res/images/TnyXnclei.jpeg">](/res/images/TnyXnclei.jpeg)
