@@ -80,6 +80,9 @@
     font-family: poppins;
     margin: 0;
     padding: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    word-wrap: break-word;
 }
 
 body.drawer, body.cargado.drawer{
@@ -454,9 +457,10 @@ color: black;
 }
 
 .dorian{
+overflow: hidden;
 text-align: center;
-padding: 2px 10vw;
-min-height: 60vh;  
+margin: 2px 10vw;
+min-height: 60vh;
 }
 
 input {
@@ -484,7 +488,7 @@ ul {
          
   .dorian{
  
- padding: 2px 8vw;
+ margin: 2px 8vw;
  
 }
 
