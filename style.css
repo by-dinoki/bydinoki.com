@@ -507,7 +507,7 @@ font-size:40px;
 }
 
 .wraper-ing{  
-width: 45vw;
+width: 60vw;
 pointer-events: none;
 user-select: none;
 padding: 10px;
@@ -554,7 +554,7 @@ width: 80vw;
 @media screen and (min-width: 1090px) {
 
 .wraper-ing{  
-width: 45%;
+width: 90%;
 }
 }
 
