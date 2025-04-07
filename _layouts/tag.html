@@ -21,7 +21,9 @@ layout: page
        {% endif %}
 
       </a>
-      <br/><br/>
+      <br/>{% unless forloop.last %}
+      <hr style="border-color: black;">
+      {% endunless %}<br/>
 </div>
 {% endif %}
 {% endfor %}
@@ -37,6 +39,10 @@ layout: page
         font-size: 30px;
         margin: 12px 0px 2px;
         width: max-content;
+    }
+
+    .desk{
+        width: auto;
     }
 
     .my-image {
@@ -68,6 +74,10 @@ layout: page
     .ptit {
         width: -webkit-fill-available;
     }
+
+    .tile, .desk{
+    width: fit-content;
+   }
     
     }
     

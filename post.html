@@ -27,7 +27,10 @@ image: "https://bydinoki.com/res/branding/thumbnaill.jpg"
        <img class="my-image" src="{{ post.image }}">
        <br/>
        {% endif %}</a>
-      <br/><br/>
+
+      <br/> {% unless forloop.last %}
+      <hr style="border-color: black;">
+      {% endunless %}<br/>
 </div>
 {% endfor %}
 
@@ -73,6 +76,9 @@ font-size: 40px !important;
     margin: 0 10vw;
 
 }
+ .tile{
+    width: fit-content;
+ }
 
 }
 
