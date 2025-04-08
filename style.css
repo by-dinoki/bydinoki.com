@@ -198,10 +198,12 @@ display:none;
 
     .dropdown .dropbtn {
       color: white;
+      opacity: 1;
     }
 
     .dropdown .dropbtn:hover {
       text-decoration: underline;
+      opacity: 0.55;
     }
 
     .dropdown-content{
