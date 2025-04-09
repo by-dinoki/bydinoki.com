@@ -4,6 +4,8 @@ title:  "¡Aguas con las &quot;Mentiras&quot; Mexicanas!"
 description: "¡ Que Onda Banda ! Sabes que en México existen mentiras que siempre decimos NOSOTROS… Dejame te cuento…"
 image: "https://i.imgur.com/Ep0NnAB.jpeg"
 date:   2025-03-24 18:34:00 -0600
+redirect_from:
+  - /p/solo-la-puntita.html
 ---
 
 <a href="https://i.imgur.com/Ep0NnAB.jpeg"><img class="featured-imgo" draggable="false" style="height: 250px; user-select: none; object-fit: cover; aspect-ratio:1795/2110;" alt="#BYDINOKI Poster" src="https://i.imgur.com/Ep0NnAB.jpeg" width="1795" height="2110"></a>
