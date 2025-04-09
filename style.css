@@ -547,7 +547,7 @@ img{
 }
 
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 730px) {
 
 .wraper-ing{  
 width: 80vw;
@@ -557,7 +557,7 @@ width: 80vw;
 @media screen and (min-width: 1090px) {
 
 .wraper-ing{  
-width: 90%;
+max-width: 50%;
 }
 }
 
