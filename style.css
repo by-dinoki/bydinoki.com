@@ -172,6 +172,18 @@ display:none;
 
 }
 
+
+@media (min-width: 2000px) {
+
+header{
+  margin: 0px 14vw 15px;
+
+}
+
+
+}
+
+
 /* Estilos para pantallas más pequeñas (teléfonos) */
 @media (max-width: 1000px) {
     header {
