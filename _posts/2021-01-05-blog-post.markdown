@@ -4,6 +4,8 @@ title:  "My Social"
 description: "FOLLOW ME IN Instagram..."
 image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinlZT4sNVmG665NMUrQMtkLmIveIH8G6CIuGydRIu-uPX7_qSyvUG6bOLB-5GOzTF4LgcYUiScSdBqxelbgBRHGnUXsHi77CzZ2Qa_25_79iqcSO0y_4iUofAkDrnlTDUGJYqnaSt4krxs/w522-h293/11a12345676.png"
 date:   2021-01-05 01:02:00 -0600
+redirect_from:
+  - /2021/01/blog-post.html
 tags: 
   - comunicado
 ---
