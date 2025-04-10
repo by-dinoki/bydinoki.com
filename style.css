@@ -459,6 +459,12 @@ background-color: yellow;
 color: black;
 }
 
+hr {
+  border-color: black;
+  border-style: solid;
+  margin: 1px;
+}
+
 .dorian{
 text-align: center;
 margin: 2px 10vw;
