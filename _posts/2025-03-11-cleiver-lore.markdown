@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Cleiver's Lore"
-description: "Era el primer día de secundaria para Cleiver y estaba emocionado de ver esa escuela... Cleiver se presento frente a sus compañeros y la maestra, estaba feliz..."
+description: "Era el primer día de secundaria para Cleiver y estaba emocionado de ver esa escuela... Cleiver se presento frente a sus compañeros y la maestra, estaba feliz... Hasta que algunos de sus compañeros de clase Cleiver lo miraron extraño porque sus ojos eran de un color muy diferente, y además de eso sus ojos cambiaron de color..."
 image: "/res/images/TnyXnclei.jpeg"
 date:   2025-03-11 17:00:00 -0600
 tags: 
