@@ -573,7 +573,8 @@ img{
 @media screen and (max-width: 730px) {
 
 .wraper-ing{  
-width: 80vw;
+width: 100vw;
+padding: 0px;
 }
 }
 
