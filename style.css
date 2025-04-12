@@ -509,6 +509,93 @@ ul {
   margin-bottom: 0.5rem;
 }
 
+.pricing-table {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-column {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: left;
+}
+
+.pricing-header {
+  position: relative;
+  font-size: 20px;
+}
+  
+  #myBton{
+    
+    width:200px;
+    
+  }
+
+.tag {
+  font-size: 16px;
+  transform: translateX(-50%);
+  background-color: #fff; /* Color de la etiqueta "Popular" */
+  color: #b80000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.pricing-price {
+  font-weight: 900;
+  font-size: 40px;
+  margin: 20px 0;
+}
+  
+  .pricing-price .currency {
+  font-weight: 900;
+  font-size: 20px;
+
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-features li {
+  margin-bottom: 10px;
+}
+
+.pricing-button {
+  background-color: #007bff; /* Color del botón */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+  
+  h3{
+   font-size: 25px;
+   
+  }
+  
+  @media screen and (max-width: 580px){
+    
+    .pricing-table {
+  display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+    
+    .pricing-column{
+     
+      width: 90%;
+      
+    }
+    
+  }
+
 @media only screen and (max-width: 630px) {
          
   .dorian{
@@ -708,22 +795,23 @@ height: 28em;
 }
 
 #Btnt {
-    box-shadow: 0px 0px 0px 3px #b80000;
-    color: #ffffff;
-    margin-top: 8px;
-    text-align: center;
-    padding: 15px;
-    width: 130px;
-    border-radius: 0px;
-    transition: 0.2s;
+  box-shadow: 0px 0px 0px 2px #ffffff;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+  width: 200px;
 }
 
 #Btnt:hover {
-    box-shadow: 0px 0px 0px 0px #b80000;
-    color: #dddddd;
-    background: #b80000;
-    width: 130px;
-    font-size: 12px;
+  background-color: #ffffff; /* Add a dark-grey background on hover */
+  color: black;
+  box-shadow: 0px 0px 0px 1.5px rgb(225 225 225);
 }
 
 #myBtnE {
