@@ -36,3 +36,22 @@ window.addEventListener('load', function(){
 
  });
 
+ //set string quiery ocultar branding
+     
+ const urlParams = new URLSearchParams(window.location.search);
+ const nombre = urlParams.get('hidenark') ?? "false";
+       
+        document.addEventListener("DOMContentLoaded", function () {
+       
+       let branding = document.getElementById("header");
+       let branding1 = document.getElementById("footer");
+       ppage = document.querySelector(".dorian");       
+       
+       if (nombre == "1" || nombre == "true") {
+       
+     branding.style.display = "none";
+       branding1.style.display = "none";
+       ppage.style.padding = "20px 0";
+       
+       }
+      })
