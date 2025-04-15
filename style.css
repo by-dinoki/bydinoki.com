@@ -191,7 +191,7 @@ header{
     }
     
     .spcin{
-    margin-left: 15px;
+    margin-left: 25px;
     display: block;
 }
 
@@ -206,7 +206,6 @@ header{
 
     .menu-toggle {
         display: flex; /* Visible en pantallas pequeñas */
-        margin-bottom: 10px;
     }
 
     .dropdown .dropbtn {
