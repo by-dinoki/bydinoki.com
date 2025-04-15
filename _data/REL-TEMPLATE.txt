@@ -1,4 +1,5 @@
 ---
 title: rel
 redirect_to: http://bydinoki.com/
+layout: relo
 ---
