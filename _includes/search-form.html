@@ -1,6 +1,7 @@
 <!-- HTML search field -->
 <div id="search-container">
     <input type="text" id="search-input" autocomplete="off" placeholder="Aa..." autofocus>
+    <p style="margin-bottom: 40px;"></p>
     <ul id="results-container"></ul>
     </div>
     
@@ -12,7 +13,7 @@
     SimpleJekyllSearch({
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('results-container'),
-      searchResultTemplate: '<li><a href="{url}">{title}</a><br><span class="post-meta">{date}</span></li>',
+      searchResultTemplate: '<li><a style="text-decoration:none;" href="{url}"><h2 style="margin-bottom:0px;">{title}</h2><p style="margin:8px;" class="post-dat">{date}</p><span class="post-meta">{description}</span></a></li><br/>',
       json: '/searcho.json'
     })
     </script>

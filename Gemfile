@@ -21,6 +21,7 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem 'jekyll-admin'
   gem 'jekyll-import'
+  gem 'jekyll-date-localization'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

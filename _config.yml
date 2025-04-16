@@ -13,6 +13,7 @@ url: "https://bydinoki.com" # the base hostname & protocol for your site, e.g. h
 iglink: "https://instagram.com/dinoki_0n"
 ytlink:  "https://youtube.com/channel/UCmf1ZezKYhGjPGR1eZUuDlw"
 cseos: ""
+date_locale: es
 
 
 # Build settings

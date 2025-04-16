@@ -38,8 +38,8 @@ window.addEventListener('load', function(){
 
  //set string quiery ocultar branding
      
- const urlParams = new URLSearchParams(window.location.search);
- const nombre = urlParams.get('hidenark') ?? "false";
+ urlParams = new URLSearchParams(window.location.search);
+ nombre = urlParams.get('hidenark') ?? "false";
        
         document.addEventListener("DOMContentLoaded", function () {
        

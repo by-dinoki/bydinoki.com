@@ -44,6 +44,8 @@ GEM
       rackup (~> 2.0)
       sinatra (~> 4.0)
       sinatra-contrib (~> 4.0)
+    jekyll-date-localization (0.0.8)
+      i18n (~> 1.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-import (0.25.0)
@@ -133,6 +135,7 @@ DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.4.1)
   jekyll-admin
+  jekyll-date-localization
   jekyll-feed (~> 0.12)
   jekyll-import
   jekyll-redirect-from
