@@ -200,8 +200,8 @@
     function u(t) {
       d.put(t),
       i.searchInput.addEventListener("keydown", function (event) {
-        event.preventDefault();
         if (event.key === "Enter" || event.keyCode === 13) {
+          event.preventDefault();
           c();
           l(event.target.value);
         }
