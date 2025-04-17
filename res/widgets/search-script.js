@@ -200,13 +200,6 @@
     const o = m({ required: r });
     function u(t) {
       d.put(t),
-      i.searchInput.addEventListener("keydown", function (event) {
-
-        if (event.key === "Enter" || event.keyCode === 13) {
-          c();
-          l(event.target.value);
-        }
-        });
 
         document.getElementById("search-form").addEventListener("submit", function(event) {
           event.preventDefault();
