@@ -207,6 +207,13 @@
         }
         });
 
+        i.searchForm.addEventListener("submit", function(event) {
+          event.preventDefault();
+          var query = document.getElementById("search-input").value;
+          c();
+          l(query);
+        });
+
         // Función para actualizar el query string
 function updateQueryString(query) {
   const url = new URL(window.location.href);
@@ -215,7 +222,7 @@ function updateQueryString(query) {
 }
 
 // Dentro del evento de búsqueda (submit o click)
-i.searchForm.addEventListener("submit", function(e) {
+i.searchInput.addEventListener("submit", function(e) {
   const query = document.getElementById("search-input").value.trim();
   if (query) {
     updateQueryString(query);  // Añade a la URL
