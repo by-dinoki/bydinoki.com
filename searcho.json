@@ -5,27 +5,27 @@ layout: none
 [
   {% for post in site.posts %}
     {
-      "title"    : "{{ post.title | xml_escape }}",
+      "title"    : {{ post.title | jsonify }},
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date | localize: '%d de %B del %Y', 'es' | xml_escape }}",
-      "description" : "{{ post.description | xml_escape }}"
+      "description" : {{ post.description | jsonify }}
     },
   {% endfor %}
 
   {% for page in site.pages %}
 
-  {% if page.description %}
+  {% if page.sitemap == true %}
   
     {
-      "title"    : "{{ page.title | xml_escape }}",
+      "title"    : {{ page.title | jsonify }},
       "url"      : "{{ site.baseurl }}{{ page.url }}",
       "date"     : " ",
-      "description" : "{{ page.description | xml_escape }}"
+      "description" : {{ page.description | jsonify }}
     }{% unless forloop.last %},{% endunless %}
 
     {% endif %}
 
-    {% if page.description == emphy %}
+    {% if page.sitemap == emphy %}
     {
       "title"    : "",
       "url"      : "",
@@ -36,5 +36,12 @@ layout: none
     {% endif %}
     
   {% endfor %}
+
+   {
+      "title"    : "",
+      "url"      : "",
+      "date"     : "",
+      "description" : ""
+    }
 
 ]

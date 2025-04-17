@@ -10,10 +10,16 @@
     
     <!-- Configuration -->
     <script>
+      
+
+
     SimpleJekyllSearch({
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('results-container'),
       searchResultTemplate: '<li><a style="text-decoration:none;" href="{url}"><h2 style="margin-bottom:0px;">{title}</h2><p style="margin:8px;" class="post-dat">{date}</p><span class="post-meta">{description}</span></a></li><br/>',
+      limit: 20,
       json: '/searcho.json'
-    })
+    });
+
+
     </script>
