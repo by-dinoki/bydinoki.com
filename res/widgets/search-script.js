@@ -176,7 +176,6 @@
   !(function (t) {
     let i = {
         searchInput: null,
-        searchForm: null,
         resultsContainer: null,
         json: [],
         success: Function.prototype,
@@ -201,47 +200,12 @@
     function u(t) {
       d.put(t),
       i.searchInput.addEventListener("keydown", function (event) {
-
+        setTimeout('', 500);
         if (event.key === "Enter" || event.keyCode === 13) {
           c();
           l(event.target.value);
         }
         });
-
-        document.getElementById("search-form").addEventListener("submit", function(event) {
-          event.preventDefault();
-          var query = document.getElementById("search-input").value;
-          c();
-          l(query);
-        });
-
-        // Función para actualizar el query string
-function updateQueryString(query) {
-  const url = new URL(window.location.href);
-  url.searchParams.set('q', query);  // Usa 'q' como parámetro
-  window.history.pushState({}, '', url);
-}
-
-// Dentro del evento de búsqueda (submit o click)
-document.getElementById("search-form").addEventListener("submit", function(e) {
-  e.preventDefault();
-  const query = document.getElementById("search-input").value.trim();
-  if (query) {
-    updateQueryString(query);  // Añade a la URL
-    l(query);
-  }
-});
-
-// Al cargar la página: recupera el query string si existe
-document.addEventListener("DOMContentLoaded", function() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const savedQuery = urlParams.get('q');
-  if (savedQuery) {
-    document.getElementById("search-input").value = savedQuery;
-    l(savedQuery);  // Ejecuta la búsqueda automáticamente
-  }
-});
-
     }
     function c() {
       i.resultsContainer.innerHTML = "";
