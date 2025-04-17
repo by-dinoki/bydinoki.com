@@ -7,7 +7,7 @@ layout: none
     {
       "title"    : {{ post.title | jsonify }},
       "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "date"     : {{ post.date | localize: '%d de %B del %Y', 'es' | jsonify }},
+      "date"     : "{{ post.date | localize: '%d de %B del %Y', 'es' | xml_escape }}",
       "description" : {{ post.description | jsonify }}
     },
   {% endfor %}
@@ -43,4 +43,5 @@ layout: none
       "date"     : "",
       "description" : ""
     }
+
 ]

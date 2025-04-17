@@ -185,7 +185,7 @@
         sortMiddleware: function () {
           return 0;
         },
-        noResultsText: "No hay Resultados",
+        noResultsText: "No results found",
         limit: 10,
         fuzzy: !1,
         debounceTime: null,
@@ -199,12 +199,12 @@
     const o = m({ required: r });
     function u(t) {
       d.put(t),
-      i.searchInput.addEventListener("keydown", function (event) {
-        setTimeout('', 500);
-        if (event.key === "Enter" || event.keyCode === 13) {
-          c();
-          l(event.target.value);
-        }
+        i.searchInput.addEventListener("input", function (t) {
+          -1 === [13, 16, 20, 37, 38, 39, 40, 91].indexOf(t.which) &&
+            (c(),
+            e(function () {
+              l(t.target.value);
+            }, i.debounceTime));
         });
     }
     function c() {
