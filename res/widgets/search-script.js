@@ -206,40 +206,7 @@
           l(event.target.value);
         }
         });
-
-        i.searchForm.addEventListener("submit", function(event) {
-          event.preventDefault();
-          var query = document.getElementById("search-input").value;
-          c();
-          l(query);
-        });
-
-        // Función para actualizar el query string
-function updateQueryString(query) {
-  const url = new URL(window.location.href);
-  url.searchParams.set('q', query);  // Usa 'q' como parámetro
-  window.history.pushState({}, '', url);
-}
-
-// Dentro del evento de búsqueda (submit o click)
-i.searchInput.addEventListener("submit", function(e) {
-  const query = document.getElementById("search-input").value.trim();
-  if (query) {
-    updateQueryString(query);  // Añade a la URL
-    l(query);
-  }
-});
-
-// Al cargar la página: recupera el query string si existe
-document.addEventListener("DOMContentLoaded", function() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const savedQuery = urlParams.get('q');
-  if (savedQuery != null) {
-    i.searchInput.value = savedQuery;
-    l(savedQuery);  // Ejecuta la búsqueda automáticamente
-  }
-
-});
+        
     }
     function c() {
       i.resultsContainer.innerHTML = "";
