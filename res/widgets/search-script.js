@@ -196,10 +196,17 @@
     const e = function (t, e) {
       e ? (clearTimeout(n), (n = setTimeout(t, e))) : t.call();
     };
-    var r = ["searchInput", "searchForm", "resultsContainer", "json"];
+    var r = ["searchInput", "resultsContainer", "json"];
     const o = m({ required: r });
     function u(t) {
       d.put(t),
+      i.searchInput.addEventListener("keydown", function (event) {
+
+        if (event.key === "Enter" || event.keyCode === 13) {
+          c();
+          l(event.target.value);
+        }
+        });
 
         document.getElementById("search-form").addEventListener("submit", function(event) {
           event.preventDefault();
@@ -214,6 +221,16 @@ function updateQueryString(query) {
   url.searchParams.set('q', query);  // Usa 'q' como parámetro
   window.history.pushState({}, '', url);
 }
+
+// Dentro del evento de búsqueda (submit o click)
+document.getElementById("search-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const query = document.getElementById("search-input").value.trim();
+  if (query) {
+    updateQueryString(query);  // Añade a la URL
+    l(query);
+  }
+});
 
 // Al cargar la página: recupera el query string si existe
 document.addEventListener("DOMContentLoaded", function() {
