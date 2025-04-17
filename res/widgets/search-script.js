@@ -215,16 +215,6 @@ function updateQueryString(query) {
   window.history.pushState({}, '', url);
 }
 
-// Dentro del evento de búsqueda (submit o click)
-document.getElementById("search-form").addEventListener("submit", function(e) {
-  e.preventDefault();
-  const query = document.getElementById("search-input").value.trim();
-  if (query) {
-    updateQueryString(query);  // Añade a la URL
-    l(query);
-  }
-});
-
 // Al cargar la página: recupera el query string si existe
 document.addEventListener("DOMContentLoaded", function() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -253,7 +243,9 @@ document.addEventListener("DOMContentLoaded", function() {
           for (let t = 0; t < r; t++) (e[t].query = n), s(f.compile(e[t]));
         })(d.search(t), t));
     }
-  
+    function a(t) {
+      throw new Error("SimpleJekyllSearch --- " + t);
+    }
     t.SimpleJekyllSearch = function (t) {
       var n;
       0 < o.validate(t).length &&
