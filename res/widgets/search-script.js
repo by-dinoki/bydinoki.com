@@ -203,6 +203,7 @@
       i.searchInput.addEventListener("keydown", function (event) {
 
         if (event.key === "Enter" || event.keyCode === 13) {
+          event.preventDefault(); 
           c();
           l(event.target.value);
         }
