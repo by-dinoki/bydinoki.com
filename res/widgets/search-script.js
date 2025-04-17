@@ -207,11 +207,16 @@
         }
         });
 
-        document.getElementById("search-form").addEventListener("submit", function(event) {
+        i.searchForm.addEventListener("submit", function(event) {
           event.preventDefault();
           var query = document.getElementById("search-input").value;
           c();
           l(query);
+          const query = document.getElementById("search-input").value.trim();
+  if (query) {
+    updateQueryString(query);  // Añade a la URL
+    l(query);
+  }
         });
 
         // Función para actualizar el query string
@@ -220,15 +225,6 @@ function updateQueryString(query) {
   url.searchParams.set('q', query);  // Usa 'q' como parámetro
   window.history.pushState({}, '', url);
 }
-
-// Dentro del evento de búsqueda (submit o click)
-document.getElementById("search-form").addEventListener("submit", function(e) {
-  const query = document.getElementById("search-input").value.trim();
-  if (query) {
-    updateQueryString(query);  // Añade a la URL
-    l(query);
-  }
-});
 
 // Al cargar la página: recupera el query string si existe
 document.addEventListener("DOMContentLoaded", function() {
