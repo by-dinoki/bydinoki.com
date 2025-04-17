@@ -37,11 +37,4 @@ layout: none
     
   {% endfor %}
 
-   {
-      "title"    : "",
-      "url"      : "",
-      "date"     : "",
-      "description" : ""
-    }
-
 ]
