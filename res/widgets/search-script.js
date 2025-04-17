@@ -235,10 +235,10 @@ document.addEventListener("DOMContentLoaded", function() {
   const urlParams = new URLSearchParams(window.location.search);
   const savedQuery = urlParams.get('q');
   if (savedQuery) {
-    document.getElementById("search-input").value = savedQuery;
-    c();
+    i.searchInput.value = savedQuery;
     l(savedQuery);  // Ejecuta la búsqueda automáticamente
   }
+
 });
     }
     function c() {
