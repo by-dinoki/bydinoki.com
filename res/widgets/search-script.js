@@ -234,7 +234,7 @@ document.getElementById("search-form").addEventListener("submit", function(e) {
 document.addEventListener("DOMContentLoaded", function() {
   const urlParams = new URLSearchParams(window.location.search);
   const savedQuery = urlParams.get('q');
-  if (savedQuery) {
+  if (savedQuery != null) {
     i.searchInput.value = savedQuery;
     l(savedQuery);  // Ejecuta la búsqueda automáticamente
   }
