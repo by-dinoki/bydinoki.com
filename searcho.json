@@ -5,10 +5,10 @@ layout: none
 [
   {% for post in site.posts %}
     {
-      "title"    : {{ post.title | jsonify }},
+      "title"    : "{{ post.title | xml_escape }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date | localize: '%d de %B del %Y', 'es' | xml_escape }}",
-      "description" : {{ post.description | jsonify }}
+      "description" : "{{ post.description | xml_escape }}"
     },
   {% endfor %}
 
@@ -17,10 +17,10 @@ layout: none
   {% if page.sitemap == true %}
   
     {
-      "title"    : {{ page.title | jsonify }},
+      "title"    : "{{ page.title | xml_escape }}",
       "url"      : "{{ site.baseurl }}{{ page.url }}",
       "date"     : " ",
-      "description" : {{ page.description | jsonify }}
+      "description" : "{{ page.description | xml_escape }}"
     }{% unless forloop.last %},{% endunless %}
 
     {% endif %}
