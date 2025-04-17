@@ -203,7 +203,6 @@
       i.searchInput.addEventListener("keydown", function (event) {
 
         if (event.key === "Enter" || event.keyCode === 13) {
-          e.preventDefault(); 
           c();
           l(event.target.value);
         }
@@ -261,9 +260,7 @@ document.addEventListener("DOMContentLoaded", function() {
           for (let t = 0; t < r; t++) (e[t].query = n), s(f.compile(e[t]));
         })(d.search(t), t));
     }
-    function a(t) {
-      throw new Error("SimpleJekyllSearch --- " + t);
-    }
+    
     t.SimpleJekyllSearch = function (t) {
       var n;
       0 < o.validate(t).length &&
