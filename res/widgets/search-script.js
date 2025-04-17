@@ -223,7 +223,6 @@ function updateQueryString(query) {
 
 // Dentro del evento de búsqueda (submit o click)
 document.getElementById("search-form").addEventListener("submit", function(e) {
-  e.preventDefault();
   const query = document.getElementById("search-input").value.trim();
   if (query) {
     updateQueryString(query);  // Añade a la URL
@@ -237,6 +236,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const savedQuery = urlParams.get('q');
   if (savedQuery) {
     document.getElementById("search-input").value = savedQuery;
+    c();
     l(savedQuery);  // Ejecuta la búsqueda automáticamente
   }
 });
