@@ -1,0 +1,80 @@
+<div id="dialogo-cookies" class="dialogo-cookies oculto">
+    <div class="dialogo-contenido">
+        <div class="letras"><h2>Uso de Cookies</h2>
+        <p>Este sitio web utiliza cookies para mejorar la experiencia del usuario y analizar el tráfico del sitio web. <a class="lkp" target="_blank" href="/cookies">Más Información...</a></p>
+        </div>
+        <button id="aceptar-cookies" class="boton aceptar"><img class="close" draggable="false" src="https://img.icons8.com/?size=200&id=8112&format=png&color=b80000" width="42" height="42" alt="Close"></button>
+   
+    </div>
+</div>
+
+<style>
+
+.dialogo-cookies {
+    position: fixed;
+    bottom: 0;
+    left: -15px;
+    width: 100%;
+    color: #b80000;
+    padding: 0 15px;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    user-select: none;
+}
+
+.dialogo-cookies.visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.dialogo-contenido {
+    background-color: #fff;
+    padding: 0 25px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.dialogo-contenido h2 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.close {
+   width: 25px;
+   height: 25px;
+}
+
+.lkp{
+    color: #b80000;
+}
+
+.lkp:hover{
+    color: #8b0000;
+}
+
+.letras{
+    font-size: medium;
+
+}
+
+.dialogo-contenido p {
+    margin-bottom: 20px;
+    font-size: 0.95em;
+}
+
+.boton {
+    width: 90px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.oculto {
+    opacity: 0;
+    pointer-events: none;
+}
+
+</style>

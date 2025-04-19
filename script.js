@@ -55,3 +55,33 @@ window.addEventListener('load', function(){
        
        }
       })
+
+
+      // Cookies Pager
+
+              
+      const dialogoCookies = document.getElementById('dialogo-cookies');
+      const aceptarCookies = document.getElementById('aceptar-cookies');
+      
+      // Función para mostrar el diálogo de cookies
+      function mostrarDialogoCookies() {
+          if (!localStorage.getItem('cookiesAceptadas')) {
+              dialogoCookies.classList.remove('oculto');
+              dialogoCookies.classList.add('visible');
+          }
+      }
+      
+      // Función para ocultar el diálogo de cookies
+      function ocultarDialogoCookies() {
+          dialogoCookies.classList.remove('visible');
+          dialogoCookies.classList.add('oculto');
+      }
+      
+      // Eventos de los botones
+      aceptarCookies.addEventListener('click', () => {
+          localStorage.setItem('cookiesAceptadas', 'true');
+          ocultarDialogoCookies();
+      });
+      
+      // Mostrar el diálogo al cargar la página
+      mostrarDialogoCookies();
