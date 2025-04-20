@@ -12,6 +12,20 @@ layout: none
     },
   {% endfor %}
 
+  {
+    "title"    : "Política de Privacidad",
+    "url"      : "/privacy",
+    "date"     : " ",
+    "description" : " "
+  },
+
+  {
+    "title"    : "Política de Cookies",
+    "url"      : "/cookies",
+    "date"     : " ",
+    "description" : " "
+  },
+
   {% for page in site.pages %}
 
   {% if page.sitemap == true %}
