@@ -12,6 +12,15 @@ layout: none
     },
   {% endfor %}
 
+  {% for tag in site.tags %}
+        
+  {
+    "title"    : "#{{ tag[0] | xml_escape }}",
+    "url"      : "{{ site.baseurl }}/hashtag/{{ tag[0] }}",
+    "date"     : " ",
+    "description" : "Hashtag"
+  },
+
 
         {% endfor %}
 
@@ -38,7 +47,7 @@ layout: none
       "url"      : "{{ site.baseurl }}{{ page.url }}",
       "date"     : " ",
       "description" : {{ page.description | jsonify }}
-    },
+    }{% unless forloop.last %},{% endunless %}
 
     {% endif %}
 
@@ -48,19 +57,10 @@ layout: none
       "url"      : "",
       "date"     : "",
       "description" : ""
-    },
+    }{% unless forloop.last %},{% endunless %}
     
     {% endif %}
     
   {% endfor %}
-
-  {% for tag in site.tags %}
-        
-  {
-    "title"    : "#{{ tag[0] | xml_escape }}",
-    "url"      : "{{ site.baseurl }}/hashtag/{{ tag[0] }}",
-    "date"     : " ",
-    "description" : "Hashtag"
-  }{% unless forloop.last %},{% endunless %}
 
 ]
