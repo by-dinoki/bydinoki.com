@@ -12,18 +12,30 @@ layout: none
     },
   {% endfor %}
 
+  {% for tag in site.tags %}
+        
+  {
+    "title"    : "#{{ tag[0] | xml_escape }}",
+    "url"      : "{{ site.baseurl }}/hashtag/{{ tag[0] }}",
+    "date"     : " ",
+    "description" : "Hashtag"
+  },
+
+
+        {% endfor %}
+
   {
     "title"    : "Política de Privacidad",
     "url"      : "/privacy",
     "date"     : " ",
-    "description" : " "
+    "description" : "Privacidad del Sitio y del Usuario"
   },
 
   {
     "title"    : "Política de Cookies",
     "url"      : "/cookies",
     "date"     : " ",
-    "description" : " "
+    "description" : "Todo sobre las Cookies"
   },
 
   {% for page in site.pages %}
