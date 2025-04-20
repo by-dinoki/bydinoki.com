@@ -12,8 +12,8 @@ permalink: /post/:title
 url: "https://bydinoki.com" # the base hostname & protocol for your site, e.g. http://example.com
 iglink: "https://instagram.com/dinoki_0n"
 ytlink:  "https://youtube.com/channel/UCmf1ZezKYhGjPGR1eZUuDlw"
-cseos: ""
 date_locale: es
+cseos: ""
 
 
 # Build settings
