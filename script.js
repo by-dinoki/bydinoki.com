@@ -60,8 +60,8 @@ window.addEventListener('load', function(){
       // Cookies Pager
 
               
-      const dialogoCookies = document.getElementById('dialogo-cookies');
-      const aceptarCookies = document.getElementById('aceptar-cookies');
+      dialogoCookies = document.getElementById('dialogo-cookies');
+      aceptarCookies = document.getElementById('aceptar-cookies');
       
       // Función para mostrar el diálogo de cookies
       function mostrarDialogoCookies() {
