@@ -15,6 +15,7 @@ ytlink:  "https://youtube.com/channel/UCmf1ZezKYhGjPGR1eZUuDlw"
 date_locale: es
 cseos: ""
 
+# Pluging settings
 
 # Build settings
 plugins:
@@ -23,6 +24,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-import
+  - jekyll-archives
 
 
 # Exclude from processing.
