@@ -42,8 +42,7 @@ layout: none
     "title"    : "Descargo de Responsabilidad",
     "url"      : "/responsability",
     "date"     : " ",
-    "description" : "Descargo de Responsabilidad sobre los personajes de Dinoki ON y de otras
-      personas"
+    "description" : "Descargo de Responsabilidad sobre los personajes de Dinoki ON y de otras personas"
   },
 
   {% for page in site.pages %}
