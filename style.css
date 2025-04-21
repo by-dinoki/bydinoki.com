@@ -461,6 +461,15 @@ user-select: auto;
 overflow: auto;
 }
 
+body::selection {
+  background-color: #8b0000;
+  color: white;
+  }
+
+select option {
+  color:#b80000;
+  }
+
 .titling {
 color:#b80000;
 

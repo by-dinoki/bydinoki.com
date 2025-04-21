@@ -7,25 +7,79 @@ sitemap: true
 ---
 
 
-<div class="tit1" style="clear: both; text-align:center; pointer-events: none; user-select: none;">
-    <p style="margin-top: 1px; margin-left: 5px; margin-bottom:10px; text-align: center;">
-        <span style="color: black; font-weight:900; font-size: 30px;"><strong>Próximamente...</strong></span></p>
+<h1 id="imr1">THIS IS THE PORTFOLIO</h1>
+<p id="imr2">The Dinoki ON's Porfolio !</p>
+
+<br/>
   
-    <div class="separator" style="clear: both;">
-    <img
-      alt="ARG BARRIENDO"
-      style="margin-bottom: 1px;"
-      draggable="false"
-      border="0"
-      width="255"
-      data-original-height="1080"
-      data-original-width="1392"
-      src="https://i.imgur.com/ndbFgKx.png"
-    />
+  <div class="gricl">
+    
+    {% for portt in site.data.portt %}
+
+    <a href="{{ portt.imag }}" target="_blank"><img class="cl1" alt="{{ portt.tit }}" draggable="false" src="{{ portt.imag }}" width="1895" height="1895"></a>
+
+    {% endfor %}
+
   </div>
 
   <style>
+
   .dorian{
-    padding: 2px 10vw; 
+    margin: 2px 1vw; 
     }
+
+    #imr1{
+      font-size: 50px;
+      color: #b80000;
+    }
+
+    #imr2{
+      font-size: 25px;
+      color: #b80000;
+    }
+    
+
+.gricl{
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    justify-content: center;
+    gap: 8px;
+      
+    }
+
+    img.cl1{
+      object-fit: cover;
+     height: 300px;
+    width: 300px; 
+      
+    }
+
+    @media screen and (max-width: 1000px){
+
+      #imr1{
+      font-size: 40px;
+    }
+
+    #imr2{
+      font-size: 18px;
+    }
+
+ .gricl{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+gap: 8px;
+
+}
+    }
+
+    @media screen and (min-width: 1200px){
+
+ .gricl{
+display: grid;
+grid-template-columns: repeat(4, 0.2fr);
+gap: 8px;
+
+}
+    }
+
     </style>
