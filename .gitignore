@@ -1,6 +1,7 @@
+README.md
+README.txt
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
-README.md
