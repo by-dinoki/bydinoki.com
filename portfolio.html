@@ -13,13 +13,11 @@ sitemap: true
 <br/>
   
   <div class="gricl">
-    
     {% for portt in site.data.portt %}
-
-    <a href="{{ portt.imag }}" target="_blank"><img class="cl1" alt="{{ portt.tit }}" draggable="false" src="{{ portt.imag }}" width="900" height="900"></a>
-
+    <a href="{{ portt.imag }}" target="_blank">
+      <img class="cl1" alt="{{ portt.tit }}" draggable="false" src="{{ portt.imag }}" width="900" height="900">
+    </a>
     {% endfor %}
-
   </div>
 
   <p id="imr2"><i>Pronto se actualizará lo más pronto posible...</i></p>
