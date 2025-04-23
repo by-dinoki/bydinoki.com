@@ -15,7 +15,7 @@ sitemap: true
   <div class="gricl">
     {% for portt in site.data.portt %}
     <a href="{{ portt.imag }}" target="_blank">
-      <img class="cl1" alt="{{ portt.tit }}" draggable="false" src="{{ portt.imag }}" width="900" height="900">
+      <img class="cl1" alt="{{ portt.tit }}" draggable="false" loading="lazy" src="{{ portt.imag }}" width="1000" height="1000">
     </a>
     {% endfor %}
   </div>
