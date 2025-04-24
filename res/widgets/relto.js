@@ -6,7 +6,7 @@ const gitt = "by-dinoki.github.io/bydinoki.com/";
 
 if (texto.includes(onrnd) || texto.includes(gitt)){
   
-  console.log("ENTRO A https://BYDINOKI.com");
+  location.replace("https://bydinoki.com/");
 
 }
 
