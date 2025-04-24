@@ -5,11 +5,18 @@ const onrnd = "bydinoki.onrender.com";
 const gitt = "by-dinoki.github.io";
 const nombre = "bydinoki.com";
 
-if (texto.includes(onrnd) || texto.includes(gitt)){
+if (texto.includes(onrnd)){
   
-  location.replace(texto, nombre);
+  location.replace(texto, "https://"+nombre);
   document.body.style.display = "none";
 
+}
+
+else if (texto.includes(gitt)){
+
+  location.replace("https://"+nombre);
+  document.body.style.display = "none";
+  
 }
 
 else{
