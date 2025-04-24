@@ -7,6 +7,7 @@ const nombre = "bydinoki.com";
 
 if (texto.includes(onrnd)){
   
+  var url = window.location.toString();
   window.location = url.replace(texto, nombre);
   document.body.style.display = "none";
 
