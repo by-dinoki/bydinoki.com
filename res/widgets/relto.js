@@ -2,7 +2,7 @@
 
 texto = window.location.href ;
 const onrnd = "bydinoki.onrender.com";
-const gitt = "bydinoki.github.io/bydinoki.com";
+const gitt = "https://by-dinoki.github.io/bydinoki.com/";
 
 if (texto.includes(onrnd) || texto.includes(gitt)){
   
