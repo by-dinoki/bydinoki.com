@@ -3,19 +3,19 @@
 texto = window.location.hostname;
 const onrnd = "bydinoki.onrender.com";
 const gitt = "by-dinoki.github.io";
-const nombre = "bydinoki.com";
+const bydinoki = "bydinoki.com";
 
 if (texto.includes(onrnd)){
   
   var url = window.location.toString();
-  window.location = url.replace(texto, nombre);
+  window.location = url.replace(texto, bydinoki);
   document.body.style.display = "none";
 
 }
 
 else if (texto.includes(gitt)){
 
-  location.replace("https://"+nombre);
+  location.replace("https://"+bydinoki);
   document.body.style.display = "none";
   
 }
