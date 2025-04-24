@@ -3,10 +3,11 @@
 texto = window.location.hostname;
 const onrnd = "bydinoki.onrender.com";
 const gitt = "by-dinoki.github.io";
+const nombre = "bydinoki.com";
 
 if (texto.includes(onrnd) || texto.includes(gitt)){
   
-  location.replace("https://bydinoki.com/");
+  location.replace(texto, nombre);
   document.body.style.display = "none";
 
 }
