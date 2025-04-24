@@ -1,6 +1,6 @@
 // set the domain web
 
-const texto = window.location.href ;
+texto = window.location.href ;
 const onrnd = "bydinoki.onrender.com";
 const gitt = "bydinoki.github.io/bydinoki.com";
 
