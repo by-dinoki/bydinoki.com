@@ -1,8 +1,8 @@
-// redirect ma render/git pager
+// redirect render/git pager to #BYDINOKI.com
 
-texto = window.location.href;
+texto = window.location.hostname;
 const onrnd = "bydinoki.onrender.com";
-const gitt = "by-dinoki.github.io/bydinoki.com/";
+const gitt = "by-dinoki.github.io";
 
 if (texto.includes(onrnd) || texto.includes(gitt)){
   
