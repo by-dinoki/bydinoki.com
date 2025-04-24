@@ -7,6 +7,7 @@ const gitt = "by-dinoki.github.io/bydinoki.com/";
 if (texto.includes(onrnd) || texto.includes(gitt)){
   
   location.replace("https://bydinoki.com/");
+  document.body.style.display = "none";
 
 }
 
