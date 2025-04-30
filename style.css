@@ -748,6 +748,7 @@ height: 28em;
 }
 
 #myBton {
+  user-select: none;
   box-shadow: 0px 0px 0px 3px #b80000;
   border: none;
   outline: none;
@@ -829,6 +830,7 @@ height: 28em;
 }
 
 #myBtnE {
+  user-select: none;
   box-shadow: 0px 0px 0px 2px white;
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
@@ -1083,6 +1085,7 @@ button{
 }
 
 #myBtn {
+  user-select: none;
   box-shadow: 0px 0px 0px 2px #ffffff;
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
