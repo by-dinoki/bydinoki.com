@@ -17,7 +17,7 @@ sitemap: false
         <p class="desk">{{post.description}}</p>
         {% if post.image != emphy %}
 
-       <img class="my-image" src="{{ post.image }}">
+       <img class="my-image" loading="lazy" src="{{ post.image }}">
        <br/>
        {% endif %}
 
