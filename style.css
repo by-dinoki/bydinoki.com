@@ -690,6 +690,10 @@ max-width: 60%;
 
 /* Others Styles */
 
+.hashtag{
+  user-select: none;
+}
+
 @media screen and (max-width: 900px) {
 
 .featured-imgo{
