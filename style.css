@@ -149,6 +149,10 @@ nav a:hover {
 }
 
 .cl0{
+  background: #b80000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   width: 45px;
   height: 36px;
     display: none;
@@ -246,6 +250,7 @@ margin-top: 20px;
 }
 
     nav {
+        overflow: auto;
         opacity: 0;
         pointer-events: none; /* Oculta la navegación en pantallas pequeñas */
         left: 0;
