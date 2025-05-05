@@ -149,7 +149,6 @@ nav a:hover {
 }
 
 .cl0{
-  background: #b80000;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -201,9 +200,8 @@ header{
 }
 
 .cl0{
-    
     display: block;
-    background: transparent;
+    background: #b80000;
     border: 0;
     cursor: pointer;
     margin-top: 5px;
@@ -234,9 +232,8 @@ header{
     }
     
     .dropdown-content a{
-
+      font-size: 32px;
       text-align: center;
-
     }
 
 .social{
