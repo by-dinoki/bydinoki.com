@@ -1,0 +1,97 @@
+---
+title: Frases del Dorian Grey
+description: Estas son las frases que dice mi amigo y mi bro Dorian Grey.
+layout: page
+image: "https://bydinoki.com/res/branding/thumbnaill.jpg"
+sitemap: true
+---
+
+<h1 id="imr1">Frases del Dorian Grey</h1>
+<p id="imr2">Estas son las frases que dice mi amigo y mi bro Dorian Grey...</p>
+
+
+<div class="gricl">
+  {% for dgreyq in site.data.dgreyq %}
+<div>
+<a href="{{ dgreyq.imag }}" target="_blank">
+<img class="cl1" alt="{{ dgreyq.quot }}" draggable="false" loading="lazy" src="{{ dgreyq.imag }}"></a>
+<br>
+<p class="quott">“{{ dgreyq.quot }}”</p>
+</div>
+{% endfor %}
+</div>
+
+
+<style>
+
+#imr1{
+  user-select: none;
+      font-size: 50px;
+      color: #0040b8;
+    }
+
+    #imr2{
+      user-select: none;
+      font-size: 22px;
+      color: #0040b8;
+    }
+
+    .quott{
+      font-family: serif;
+      font-weight: bold;
+      color: #00205c;
+      text-align: center;
+    }
+
+img.cl1{
+      background: #eeeeee;
+      object-fit: cover;
+     height: 300px;
+    max-width: 400px; 
+    }
+
+    .gricl a{
+      height: 300px;
+    }
+
+.gricl{
+    display: grid;
+    grid-template-columns: repeat(2, 0.2fr);
+    justify-content: center;
+    gap: 8px;
+      
+    }
+
+    @media screen and (max-width: 860px){
+img.cl1{
+ width: 70vw;
+}
+
+           .gricl{
+            grid-template-columns: repeat(1, 0.2fr);
+            justify-content: center;
+            gap: 8px;
+            }
+
+    }
+
+    @media screen and (max-width: 1000px){
+
+        #imr1{
+      font-size: 40px;
+    }
+
+    #imr2{
+      font-size: 18px;
+    }
+
+        .gricl{
+  grid-template-columns: auto-fill, minmax(240px, 1fr);
+  justify-content: center;
+  gap: 8px;
+  }
+
+
+    }
+
+</style>
