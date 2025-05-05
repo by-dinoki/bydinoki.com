@@ -151,10 +151,11 @@ nav a:hover {
 .cl0{
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1;
+  border-radius: 5px;
   width: 45px;
   height: 36px;
-    display: none;
+  display: none;
 }
 
 .nasocial{
