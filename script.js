@@ -56,7 +56,7 @@ window.addEventListener('load', function(){
        if (myBtn != null) {
         branding2.style.display = "none";
       }
-      if (brading3 != null) {
+      if (branding3 != null) {
         branding3.style.display = "none";
       }
        ppage.style.padding = "20px 0";
