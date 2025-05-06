@@ -16,7 +16,7 @@
      nav.classList.remove("drawer");
     setTimeout(() => {
       nav.scrollTop = 0;
-    }, 301);
+    }, 290);
         })
 
 // add the body fadding animation
@@ -91,8 +91,7 @@ function scrollFunction() {
 }
 
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
 
