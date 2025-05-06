@@ -46,6 +46,7 @@ window.addEventListener('load', function(){
        let branding = document.getElementById("header");
        let branding1 = document.getElementById("footer");
        let branding2 = document.querySelector("#myBtn");
+       let branding3 = document.querySelector("#dialogo-cookies");
        ppage = document.querySelector(".dorian");       
        
        if (nombre == "1" || nombre == "true") {
@@ -54,6 +55,9 @@ window.addEventListener('load', function(){
        branding1.style.display = "none";
        if (myBtn != null) {
         branding2.style.display = "none";
+      }
+      if (brading3 != null) {
+        branding3.style.display = "none";
       }
        ppage.style.padding = "20px 0";
        
@@ -87,8 +91,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-    
-  
 
 
       // Cookies Pager
