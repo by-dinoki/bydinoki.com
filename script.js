@@ -14,7 +14,12 @@
             nav.classList.remove("visible");
           document.body.classList.remove("drawer");
      nav.classList.remove("drawer");
+     dtopFunction();
         })
+
+        function dtopFunction() {
+          document.nav.scrollTop = 0;
+        }
 
 // add the body fadding animation
 
