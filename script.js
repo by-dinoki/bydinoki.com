@@ -14,7 +14,7 @@
             nav.classList.remove("visible");
           document.body.classList.remove("drawer");
      nav.classList.remove("drawer");
-     document.nav.scrollTop = 0;
+     nav.scrollTop = 0;
      document.documentElement.nav.scrollTop = 0;
         })
 
