@@ -16,7 +16,7 @@
      nav.classList.remove("drawer");
     setTimeout(() => {
       nav.scrollTop = 0;
-    }, 800);
+    }, 301);
         })
 
 // add the body fadding animation
