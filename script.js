@@ -15,7 +15,6 @@
           document.body.classList.remove("drawer");
      nav.classList.remove("drawer");
      nav.scrollTop = 0;
-     document.documentElement.nav.scrollTop = 0;
         })
 
 // add the body fadding animation
