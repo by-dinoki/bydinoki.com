@@ -45,24 +45,59 @@ window.addEventListener('load', function(){
        
        let branding = document.getElementById("header");
        let branding1 = document.getElementById("footer");
+       let branding2 = document.querySelector("#myBtn");
        ppage = document.querySelector(".dorian");       
        
        if (nombre == "1" || nombre == "true") {
        
      branding.style.display = "none";
        branding1.style.display = "none";
+       if (myBtn != null) {
+        branding2.style.display = "none";
+      }
        ppage.style.padding = "20px 0";
        
        }
       })
 
 
-      // Cookies Pager
+      // Go Up
+      
+     myBtn = document.querySelector("#myBtn");
+      
+     if (myBtn != null) {
+       myBtn.style.opacity = "0.0";
+      myBtn.style.pointerEvents = "none";
+      
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    myBtn.style.opacity = "1.0";
+      myBtn.style.pointerEvents = "all";
+  } else {
+    myBtn.style.opacity = "0.0";
+      myBtn.style.pointerEvents = "none";
+  }
+}
+
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    
+  
+
+
+      // Cookies Pager
               
       dialogoCookies = document.getElementById('dialogo-cookies');
       aceptarCookies = document.getElementById('aceptar-cookies');
       
+      if (dialogoCookies != null) {
+
       // Función para mostrar el diálogo de cookies
       function mostrarDialogoCookies() {
           if (!localStorage.getItem('cookiesAceptadas')) {
@@ -85,3 +120,4 @@ window.addEventListener('load', function(){
       
       // Mostrar el diálogo al cargar la página
       mostrarDialogoCookies();
+    }

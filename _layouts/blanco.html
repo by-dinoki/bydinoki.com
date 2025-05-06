@@ -28,6 +28,16 @@ display: none;
 
 </style>
 
+<script>
+
+if (window.location.search.includes('hidenark')) {
+    const url = new URL(window.location);
+    url.searchParams.delete('hidenark');
+    window.history.replaceState({}, document.title, url.toString());
+}
+
+</script>
+
 {%- include deploi.html -%}
 {%- include foot.html -%}
 
