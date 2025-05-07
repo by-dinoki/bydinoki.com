@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Shíster 64 History"
-description: "Once upon a time, a boy who simply enjoys his life, he makes art, he does some crafts, he meditates when he feels sad (since he has some problems with his mind) but well, when he wakes up he gets ready to go to work (or maybe go to college) he has some good friends here who support his art, but sometimes Shíster doesn’t think they are supporting his art, so he shows them to people and his friends so that people and friends can be aware..."
+description: "Once upon a time, a boy who simply enjoys his life, he makes art, he does some crafts, he meditates when he feels sad (since he has some problems with his mind) but well, when he wakes up he gets ready to go to work..."
 image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiv1-gyrEoA7MxmbNaGGzlc35BSxOTrr4Ff-JGB7RZH2_DPdnNF65jvbaq4MtrXQDGiuncKv0Pog7Q4_DIrBYjcLgGp5uDktFQ61F21-PEEiSy0zgZUTvlUWiYGzjP-el_h3qqnr6oS_X0IyunX6YZ1ll65QurojovkXAo7ZrI4u48_ZE5jK6nORgUgBFZE/s320/315%20sin%20t%C3%ADtulo.jpg"
 date:   2024-08-01 00:00:00 -0600
 tags: 
