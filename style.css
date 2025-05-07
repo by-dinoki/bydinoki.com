@@ -470,10 +470,22 @@ body::selection {
   color: white;
   }
 
-  body {
-    scrollbar-color: red orange;
-    scrollbar-width: thin;
-  }  
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b80000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b0000;
+}
 
 select option {
   color:#b80000;
