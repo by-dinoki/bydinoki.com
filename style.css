@@ -470,6 +470,11 @@ body::selection {
   color: white;
   }
 
+  body {
+    scrollbar-color: red orange;
+    scrollbar-width: thin;
+  }  
+
 select option {
   color:#b80000;
   }
