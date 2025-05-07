@@ -13,12 +13,13 @@
     
 <div class="dorian">
     
+    <div class="trabajo-final">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title }}</h1>
     {% include dates.html date=post.date time-attributes='class="post-date"' %} 
     
     {% for tag in page.tags %}
     <a class="hashtag" style="padding-left: 0.5vw;" href="/hashtag/{{tag}}">#{{tag}}</a>
-    {% endfor %}
+    {% endfor %}</div>
 
     <div class="wrapp">
 {{ content }}
@@ -37,13 +38,13 @@ font-weight: 700;
 user-select: none;
     }
 
-    .post-date{
+    .trabajo-final{
 user-select: none;
     }
 
 .dorian{
     text-align: left;
-    margin: 0 25vw 0 10vw;
+    margin: 0 25vw 0 22vw;
    }
 
    @media (max-width: 800px) {

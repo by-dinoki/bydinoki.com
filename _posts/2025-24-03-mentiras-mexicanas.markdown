@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "¡Aguas con las &quot;Mentiras&quot; Mexicanas!"
-description: "¡ Que Onda Banda ! Sabes que en México existen mentiras que siempre decimos NOSOTROS… Dejame te cuento…"
+description: "¡ Que Onda Banda ! Sabes que en México existen mentiras que siempre decimos NOSOTROS… Dejame te cuento… Estas son las mentiras que siempre decimos los mexicanos..."
 image: "https://i.imgur.com/Ep0NnAB.jpeg"
 date:   2025-03-24 18:34:00 -0600
 redirect_from:

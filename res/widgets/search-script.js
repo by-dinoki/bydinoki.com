@@ -189,7 +189,7 @@
         limit: 10,
         fuzzy: !1,
         debounceTime: null,
-        exclude: [],
+        exclude: ["&quot;", "&amp;", "&lt;", "&gt;"],
       },
       n;
     const e = function (t, e) {

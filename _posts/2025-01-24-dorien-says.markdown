@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dorien Says..."
-description: "Dorien says: Compartí una foto mía sin máscara..."
+description: "Dorien says: Compartí una foto mía sin mi máscara (obviamente cubriendo mi cara con mi pelo). Tiempo después, un amigo me dijo &quot;¡Guau, guau!&quot;. 💀💀"
 image: "/res/images/dori20251.jpg"
 date:   2025-01-24 11:30:00 -0600
 ---

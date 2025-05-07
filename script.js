@@ -79,7 +79,7 @@ window.addEventListener('load', function(){
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
     myBtn.style.opacity = "1.0";
       myBtn.style.pointerEvents = "all";
   } else {
@@ -91,6 +91,8 @@ function scrollFunction() {
 }
 
 function topFunction() {
+  myBtn.style.opacity = "0.0";
+  myBtn.style.pointerEvents = "none";
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 

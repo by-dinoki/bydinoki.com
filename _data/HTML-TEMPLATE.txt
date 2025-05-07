@@ -5,3 +5,7 @@ layout: page
 image: "https://bydinoki.com/res/branding/thumbnaill.jpg"
 sitemap: true
 ---
+
+
+
+ {%- include legacyp.html -%}
