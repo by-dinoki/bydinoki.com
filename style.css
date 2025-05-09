@@ -470,8 +470,9 @@ body::selection {
   color: white;
   }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar, ::-webkit-scrollbar:horizontal {
   width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -549,6 +550,7 @@ ul {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  user-select: none;
 }
 
 .pricing-column {
