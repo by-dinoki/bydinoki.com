@@ -7,26 +7,10 @@ sitemap: false
 <h1 class="ptit">#{{page.tag}}</h1>
 
 {% for post in site.posts %}
- <div>
 
     {% if post.tags contains page.tag %}
-    <a class="referl" style="text-decoration: none; color: black;" href="{{ post.url | relative_url }}">   
-        <h2 class="tile">{{post.title}}</h2>
+    {% include pots.html %}
 
-        {% include postdates.html date=post.date time-attributes='class="post-date"' %} <br/>
-
-        <p class="desk">{{post.description}}</p>
-        {% if post.image != emphy %}
-
-       <img class="my-image" loading="lazy" src="{{ post.image }}">
-       <br/>
-       {% endif %}
-
-      </a>
-      <br/>{% unless forloop.last %}
-      <hr style="border-color: #9b9b9b;">
-      {% endunless %}<br/>
-</div>
 {% endif %}
 {% endfor %}
 
@@ -101,7 +85,9 @@ sitemap: false
 {% if page.tag == "bydinoki" %}
 <style>
     .ptit{
-        color: #b80000;
+text-align: center;
+        color: white;
+        background-color: #b80000;
         text-transform: uppercase;
     }
 </style>

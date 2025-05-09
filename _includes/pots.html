@@ -1,0 +1,23 @@
+ <article class="pots">
+    
+    <a class="referl" style="text-decoration: none; color: black;" href="{{ post.url | relative_url }}">   
+        <h2 class="tile">{{post.title}}</h2>
+
+        {% include postdates.html date=post.date time-attributes='class="post-date"' %}
+    </a>
+        {% for tag in post.tags %}
+        <a class="hashtag" style="padding-left: 0.5vw;" href="/hashtag/{{tag}}">#{{tag}}</a>
+        {% endfor %} <br/>
+        <a class="referl" style="text-decoration: none; color: black;" href="{{ post.url | relative_url }}">
+        <p class="desk">{{post.description}}</p>
+
+        {% if post.image != emphy %}
+
+       <img class="my-image" loading="lazy" src="{{ post.image }}">
+       <br/>
+       {% endif %}</a>
+
+      <br/> {% unless forloop.last %}
+      <hr style="border-color: #9b9b9b;">
+      {% endunless %}<br/>
+</article>

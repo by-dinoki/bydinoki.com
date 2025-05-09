@@ -10,7 +10,7 @@ Disallow: /*.js
 Disallow: /*.html
 Disallow: /res/*/*
 Disallow: /b/*
-Disallow: /p/*
+Disallow: /go-to
 
 User-agent: *
 Allow: /
