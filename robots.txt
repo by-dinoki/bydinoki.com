@@ -9,6 +9,15 @@ Disallow: /*.css
 Disallow: /*.js
 Disallow: /*.html
 Disallow: /res/*/*
+Disallow: /b/*
+Disallow: /p/*
+
+User-agent: *
 Allow: /
+Allow: /about
+Allow: /post
+Allow: /blindfold-channel
+Allow: /portfolio
+Allow: /oc
 
 Sitemap: https://bydinoki.com/sitemap.xml
