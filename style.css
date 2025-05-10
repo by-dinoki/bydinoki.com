@@ -250,7 +250,7 @@ margin-top: 20px;
     nav {
         overflow: auto;
         opacity: 0;
-        pointer-events: none; /* Oculta la navegación en pantallas pequeñas */
+        pointer-events: none;
         left: 0;
         margin-top: 0px;
         position: fixed;
@@ -266,6 +266,10 @@ margin-top: 20px;
         opacity: 1;
         pointer-events: all; 
 
+    }
+
+    nav::-webkit-scrollbar{
+        display: none;
     }
 
     nav ul {
@@ -1107,7 +1111,7 @@ padding: 8px;
 
 button{
   font-family: 'Poppins';
-
+  user-select: none;
 }
 
 #myBtn {
