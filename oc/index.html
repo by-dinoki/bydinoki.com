@@ -10,198 +10,32 @@ redirect_from:
 ---
 
 <div class="tit1"><p style="margin-left: 15px; margin-bottom:10px; text-align: left;">
-    <span style="color: black; font-weight:900; font-size: 44px;">Los OC's/AU's De Dinoki</span></p>
+    <span style="color: #b80000; font-weight:900; font-size: 44px;">Los OC's/AU's De Dinoki</span></p>
 
     <div class="wrapper">
+      {% for oc in site.data.oc %}
       <div>
         <a href="https://characterhub.com/character/rojoz" rel="noopener noreferrer" target="_blank">
     <div class="cuad1">
-      <p style="text-align: center;"><span style="color: black; font-size: 18px;"><strong>1</strong></span></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/X32nT8T/Rojoz.jpg" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Rojóz</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 18</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en May. 2022</span></p>
+    {% if oc.numin != "" %}
+        <p style="text-align: center;"><img alt="{{ oc.num }}" class="pime" draggable="false" height="30" src="{{ oc.numin }}" width="30" /></p>
+    {% else %}
+      <p style="text-align: center;"><span style="color: black; font-size: 18px;"><strong>{{ oc.num }}</strong></span></p>
+      {% endif %}
+        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="{{ oc.pfp }}" width="150" /></p>
+        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>{{ oc.name }}</strong></span></p>
+        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">{{ oc.yar }}</span></p>
+        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">{{ oc.time }}</span></p>
     </div></a>
+    </div>
+      {% endfor %}
+      <div><a style="text-decoration: none;" href="/oc/about" rel="noopener noreferrer">
+      <div style="background-color: #b80000; box-shadow: 0px 0px 0px 0px; font-size: 30px;" class="cuad1">
+     <h1 style="display: flex; align-content: center; flex-wrap: wrap; color: white;">VER OC'S/<br>AU's INFO <br> --></h1>
+  </div></a></div>
       </div>
       
-      <div><a href="https://characterhub.com/character/azulina" rel="noopener noreferrer" target="_blank">
-    <div class="cuad1">
-      <p style="text-align: center;"><span style="color: black; font-size: 18px;"><strong>2</strong></span></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/zXkhc2s/Azulina.jpg" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Azulina</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 18</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en Ago. 2022</span></p>
-    </div></a>
-    </div>
-      
-      <div><a href="https://characterhub.com/character/moddie" rel="noopener noreferrer" target="_blank">
-    <div class="cuad1">
-      <p style="text-align: center;"><span style="color: black; font-size: 18px;"><strong>3</strong></span></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/wJYCXqX/Moddie.jpg" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Moddie</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 18</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en Ago. 2022</span></p>
-    </div></a>
-    </div>
-      
-      <div><a href="https://characterhub.com/character/axel-uvi6DU4c" rel="noopener noreferrer" target="_blank">
-    <div class="cuad1">
-      <p style="text-align: center;"><span style="color: black; font-size: 18px;"><strong>4</strong></span></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/QDtB4TT/Azel.jpg" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Azel</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 22</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en Oct. 2022</span></p>
-    </div></a>
-    </div>
-      
-      <div><a href="https://characterhub.com/character/ashka" rel="noopener noreferrer" target="_blank">
-    <div class="cuad1">
-      <p style="text-align: center;"><span style="color: black; font-size: 18px;"><strong>5</strong></span></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/rQ0FpgH/Ashka.jpg" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Ashka</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: ~30</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en Nov. 2022</span></p>
-    </div></a>
-    </div>
-      
-      <div><a href="https://characterhub.com/character/inkko" rel="noopener noreferrer" target="_blank">
-    <div class="cuad1">
-      <p style="text-align: center;"><span style="color: black; font-size: 18px;"><strong>6</strong></span></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/2g4D5qx/Inkko.jpg" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Inkko</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 19</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en 07 feb. 2023</span></p>
-    </div></a>
-    </div>
-      
-      <div><a href="https://characterhub.com/character/rojiel" rel="noopener noreferrer" target="_blank">
-    <div class="cuad1">
-      <p style="text-align: center;"><span style="color: black; font-size: 18px;"><strong>7</strong></span></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/PNVtPYH/Rojiel.jpg" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Rojiel</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 18</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en 17 May. 2023</span></p>
-    </div></a>
-    </div>
-      
-      <div><a href="https://characterhub.com/character/aoi-ztDOEdk2" rel="noopener noreferrer" target="_blank">
-    <div class="cuad1">
-      <p style="text-align: center;"><span style="color: black; font-size: 18px;"><strong>8</strong></span></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/KxVzGyZ/Aoi.jpg" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Aoí</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 18</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en 14 sept. 2023</span></p>
-    </div></a>
-    </div>
-      
-      <div><a href="https://characterhub.com/character/melo-F4L16sZa" rel="noopener noreferrer" target="_blank">
-    <div class="cuad1">
-      <p style="text-align: center;"><span style="color: black; font-size: 18px;"><strong>9</strong></span></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/gVXPKvL/Melo.jpg" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Melo</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 19</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en 05 Ago. 2023</span></p>
-    </div></a>
-    </div>
-      
-      <div><a href="https://characterhub.com/character/xori" rel="noopener noreferrer" target="_blank">
-    <div class="cuad1">
-      <p style="text-align: center;"><span style="color: black; font-size: 18px;"><strong>10</strong></span></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/7JGH73hD/Xorie.jpg" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Xori</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 24</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en 11 Oct. 2024</span></p>
-    </div></a>
-    </div>
-      
-      <div><a href="https://characterhub.com/character/cykan" rel="noopener noreferrer" target="_blank">
-    <div class="cuad1">
-      <p style="text-align: center;"><span style="color: black; font-size: 18px;"><strong>11</strong></span></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/p6HtJNxH/Cika.png" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Cykan</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 23</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en Ene. 2024</span></p>
-    </div></a>
-    </div>
-      
-      <div><a href="https://characterhub.com/character/hispanic-shister" rel="noopener noreferrer" target="_blank">
-        <div class="cuad1">
-        <p style="text-align: center;"><img alt="12" class="pime" draggable="false" height="30" src="https://i.ibb.co/LzGhRXz/12.png" width="30" /></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/g9vjJSZ/Shister.jpg" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Shíster</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 21</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en 01 Feb. 2024</span></p>
-    </div></a></div>
-      
-      <div><a href="https://characterhub.com/character/el-millonario-caja" rel="noopener noreferrer" target="_blank">
-        <div class="cuad1">
-        <p style="text-align: center;"><img alt="13" class="pime" draggable="false" height="30" src="https://i.ibb.co/s3L7nPJ/13.png" width="30" /></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/0Zxmp5L/Millonario-Caja.jpg" width="150" /></p>
-        <p id="mlt1" style="text-align: center;"><span style="color: #263238; font-size: 12px;"><strong>El Millonario Caja</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 30</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en May. 2024</span></p>
-    </div></a></div>
-      
-      <div><a href="https://characterhub.com/character/kibeh-shisterin" rel="noopener noreferrer" target="_blank">
-        <div class="cuad1">
-        <p style="text-align: center;"><img alt="14" class="pime" draggable="false" height="30" src="https://i.ibb.co/StBdL0t/14.png" width="30" /></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/wQpZV24/Kibeh.jpg" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Kibeh</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 20</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en Feb. 2024</span></p>
-    </div></a></div>
-      
-      <div><a href="https://characterhub.com/character/aryentina" rel="noopener noreferrer" target="_blank">
-        <div class="cuad1">
-        <p style="text-align: center;"><img alt="15" class="pime" draggable="false" height="30" src="https://i.ibb.co/vBZCKDh/15.png" width="30" /></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/gS0yjBk/Aryentinaa.jpg" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Aryentina</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 19</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en 22 Jul. 2023</span></p>
-    </div></a></div>
-      
-      <div><a href="https://characterhub.com/character/cleiver" rel="noopener noreferrer" target="_blank">
-        <div class="cuad1">
-        <p style="text-align: center;"><img alt="16" class="pime" draggable="false" height="30" src="https://i.ibb.co/Kmc5Bvv/16.png" width="30" /></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/Kp481mWW/Cleivar.jpg" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Cleiver</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 20</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en 02 Nov. 2024</span></p>
-    </div></a></div>
-      
-       <div><a href="https://characterhub.com/character/hacha" rel="noopener noreferrer" target="_blank">
-        <div class="cuad1">
-        <p style="text-align: center;"><img alt="17" class="pime" draggable="false" height="30" src="https://i.ibb.co/v3F7HPR/17.png" width="30" /></p>
-        <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/4ZNZDD4/hacha.png" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Hacha</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 25</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en 30 Nov. 2024</strong></span></p>
-    </div></a></div>
-      
-      <div><a href="https://characterhub.com/character/dorien" rel="noopener noreferrer" target="_blank">
-        <div class="cuad1">
-        <p style="text-align: center;"><img alt="18" class="pime" draggable="false" height="30" src="https://i.ibb.co/n0gV7ZZ/18.png" width="30" /></p>
-      <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/1ZkPTXb/dorien.jpg" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Dorien</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 19</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en 04 Ene. 2025</span></p>
-    </div></a></div>
-      
-       <div><a href="https://characterhub.com/character/harold-pingrey" rel="noopener noreferrer" target="_blank">
-        <div class="cuad1">
-        <p style="text-align: center;"><img alt="19" class="pime" draggable="false" height="30" src="https://i.ibb.co/5gXgwX09/19.png" width="30" /></p>
-      <p style="text-align: center;"><img class="pime" draggable="false" height="150" src="https://i.ibb.co/Fbs2KGtr/hario.png" width="150" /></p>
-        <p style="text-align: center;"><span style="color: #263238; font-size: 18px;"><strong>Hario</strong></span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Edad: 24</span></p>
-        <p style="text-align: center;"><span style="color: #757575; font-weight: 500; font-size: 12px;">Creado en 13 Feb. 2025</span></p>
-    </div></a></div>
-
-    <div><a style="text-decoration: none;" href="/oc/about" rel="noopener noreferrer">
-      <div style="background-color: #b80000; box-shadow: 0px 0px 0px 0px; font-size: 32px;" class="cuad1">
-     <h1 style="display: flex; align-content: center; flex-wrap: wrap; color: white;">VER OC'S/AU's INFO <br> --></h1>
-  </div></a></div>
-      
-    
+</div>
       
     </div><br />
     
