@@ -2,10 +2,10 @@
 
 ### <b>BIENVENID@ A #BYDINOKI.com !</b>
 
-Enhorabuena, encontraste el código detrás del sitio web #BYDINOKI.com, Aquí puedes ver cómo funciona el sitio web.
+Enhorabuena, encontraste el código detrás del sitio web #BYDINOKI.com, aquí puedes ver cómo funciona el sitio web.
 
 #### ¿Qué es #BYDINOKI.com?
 #BYDINOKI es una página básica que ofrece todas las Noticias y Novedades para Dinoki ON y toda su trayectoria en un Sitio Web.
 
 #### Visitalo:
-[#BYDINOKI.com](https://bydinoki.com/)
+<a target="_blank" href="http://bydinoki.com/">#BYDINOKI.com</a>
