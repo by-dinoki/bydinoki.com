@@ -19,6 +19,7 @@
     
     {% for tag in page.tags %}
     <a class="hashtag" style="padding-left: 0.5vw;" href="/hashtag/{{tag}}">#{{tag}}</a>
+    {% unless forloop.last %},{% endunless %}
     {% endfor %}</div>
 
     <div class="wrapp">
@@ -44,7 +45,6 @@ user-select: none;
 
 .dorian{
     text-align: left;
-    margin: 0 25vw 0 22vw;
    }
 
    @media (max-width: 800px) {

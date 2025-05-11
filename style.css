@@ -506,6 +506,17 @@ color:#b80000;
 
 }
 
+.my-image {
+ width: 230px;
+ height: 230px;
+object-fit: cover;
+}
+   
+.referl{
+width: 85%;
+display: contents;
+}
+
 marc {
 background-color: yellow;
 color: black;
@@ -519,7 +530,6 @@ hr {
 
 .dorian{
 text-align: center;
-margin: 2px 19%;
 min-height: 64vh;
 }
 
@@ -677,7 +687,6 @@ color: gray;
 
 br{
 user-select: none;
-
 }
 
 img{
@@ -703,6 +712,7 @@ img{
 width: 100vw;
 padding: 8px 0px;
 }
+
 }
 
 @media screen and (min-width: 1090px) {
@@ -710,6 +720,7 @@ padding: 8px 0px;
 .wraper-ing{  
 max-width: 60%;
 }
+
 }
 
 /* Page Style */
@@ -1213,7 +1224,21 @@ color:black;
   pointer-events: none;
 }
 
+@media screen and (min-width: 501px){
+  .dorian{
+    margin: 2px 15vw;
+  }
+}
 
+@media screen and (min-width: 1130px) {
+.dorian{
+   margin: 2px 20%;
+  }
+
+.context{
+width: 60%;
+}
+}
 
 @media only screen and (max-width: 1000px) {
 
@@ -1226,6 +1251,12 @@ color:black;
   padding: 10px 30px;
 }
 
+}
+
+@media screen and (min-width: 700px) {
+.context{
+width: 80%;
+}
 }
 
 /* Others Styles */

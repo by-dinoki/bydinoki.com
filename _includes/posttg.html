@@ -1,0 +1,83 @@
+<style>
+    .dorian{
+        user-select: none;
+        padding: 0px;
+        text-align: left;
+       }
+    
+       .tile {
+        font-size: 30px;
+        margin: 12px 0px 2px;
+        width: -webkit-fill-available;
+    }
+
+    .desk{
+        width: auto;
+    }
+    
+    .ptit{
+    margin: 8px 0 20px 0px;
+    font-size: 40px !important;
+    user-select: none;
+    width: max-content;
+    }
+    
+    @media (max-width: 700px) {
+    
+    .dorian {
+        margin: 0 10vw;
+    
+    }
+
+    .ptit {
+        width: -webkit-fill-available;
+    }
+
+    .tile, .desk{
+    width: fit-content;
+   }
+    
+    }
+    
+    </style>
+
+{%- include cookies.html -%}
+
+{% if page.tag == "bydinoki" %}
+<style>
+    .ptit{
+        color: white;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+
+    body{
+        background-color: #b80000;
+        color: white;
+    }
+
+    .dorian, .tile, .desk, a, time, footer{
+        color: white;
+    }
+</style>
+{% endif %}
+
+{% if page.tag == "BlindfoldChannel" %}
+<style>
+    .ptit{
+        text-transform: uppercase;
+        color: white;
+        background-color: black;
+        padding: 8px 12px;
+    }
+</style>
+{% endif %}
+
+
+{% if page.tag == "comunicado" %}
+<style>
+    .ptit{
+        color: #b80000;
+    }
+</style>
+{% endif %}
