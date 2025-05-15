@@ -1,4 +1,4 @@
-<img alt="#BYDINOKI" title="" style="width: 300px; pointer-events:none;" src="https://bydinoki.com/res/branding/logo1.png">
+<img alt="#BYDINOKI" title="" style="width: 300px; pointer-events:none;" src="https://bydinoki.com/res/branding/logo2.png">
 
 ### <b>BIENVENID@ A #BYDINOKI.com !</b>
 
