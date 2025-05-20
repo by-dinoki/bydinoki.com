@@ -150,7 +150,7 @@
   yar: "Edad: 24"
   time: "Creado en 13 Feb. 2025"
 
-- name: <BR/>
+- name: &lt;BR/&gt;
   num: 28
   numin: "/oc/ing/20.png"
   pfp: "/oc/ing/br.jpg"
