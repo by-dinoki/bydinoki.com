@@ -627,32 +627,6 @@ ul {
    font-size: 25px;
    
   }
-
-     .link-body{
-    background-size: cover !important;
-    background-attachment: fixed !important;
-    background-position-x: center !important;
-    min-height: 100%;
-    
-    }
-
-    @media screen and (max-width: 500px) {
-        .link-body{
-           background-repeat: no-repeat !important;
-           background-position-y: 0% !important;
-           background-attachment: scroll !important;
-           background-size: 530px !important;
-        }
-    }
-
-    @media screen and (min-width: 700px) {
-
-        .link-body{
-        background-position-x: center !important;
-        background-position-y: 18% !important;
-        }
-        
-    }
   
   @media screen and (max-width: 580px){
     
