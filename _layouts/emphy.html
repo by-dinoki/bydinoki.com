@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+{%- include ahc.html -%}
+
+<title>{{page.title}}</title>
+
+<body>
+    
+
+{{ content }}
+
+
+<style>
+
+    body{
+opacity: 1 !important;
+pointer-events: all !important;
+user-select: auto;
+overflow: auto;
+    }
+</style>
+
+<script>
+
+if (window.location.search.includes('hidenark')) {
+    const url = new URL(window.location);
+    url.searchParams.delete('hidenark');
+    window.history.replaceState({}, document.title, url.toString());
+}
+
+</script>
+
+</body>
+</html>

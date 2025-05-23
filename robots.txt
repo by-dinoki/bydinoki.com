@@ -11,6 +11,7 @@ Disallow: /*.html
 Disallow: /res/*/*
 Disallow: /b/*
 Disallow: /go-to
+Disallow: /*/
 
 User-agent: *
 Allow: /
