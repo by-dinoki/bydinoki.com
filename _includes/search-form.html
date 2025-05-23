@@ -13,7 +13,11 @@
     <!-- Configuration -->
     <script>
 
-    SimpleJekyllSearch({
+ document.addEventListener('DOMContentLoaded', (event) => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const searchTermFromQuery = urlParams.get('q'); // 'q' es el parámetro en la URL
+
+      sjs = SimpleJekyllSearch({
       searchInput: document.getElementById('search-input'),
       searchForm: document.getElementById('search-form'),
       resultsContainer: document.getElementById('results-container'),
@@ -22,5 +26,11 @@
       json: '/searcho.json'
     });
 
+    if (searchTerm) {
+  document.getElementById('search-input').value = searchTerm;
+  sjs.search(searchTerm);
+}
+
+  });
 
     </script>
