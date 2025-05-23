@@ -28,7 +28,7 @@
 
     if (searchTermFromQuery) {
   document.getElementById('search-input').value = decodeURIComponent(searchTermFromQuery);
-  sjs.search(searchTermFromQuery);
+  sjs.search(decodeURIComponent(searchTermFromQuery));
 }
 
   });
