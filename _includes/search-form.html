@@ -26,9 +26,9 @@
       json: '/searcho.json'
     });
 
-    if (searchTerm) {
-  document.getElementById('search-input').value = searchTerm;
-  sjs.search(searchTerm);
+    if (searchTermFromQuery) {
+  document.getElementById('search-input').value = decodeURIComponent(searchTermFromQuery);
+  sjs.search(searchTermFromQuery);
 }
 
   });
