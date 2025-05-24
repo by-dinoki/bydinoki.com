@@ -6,9 +6,30 @@ image: "https://bydinoki.com/res/branding/thumbnaill.jpg"
 sitemap: true
 ---
 <div class="container">
-    <h1 class="text-center">Contacto</h1>
-    <p class="text-center">Si tienes alguna duda o consulta, no dudes en contactarnos al correo siguiente...</p>
-   <a target="_blank" href="mailto:{{site.email}}" style="font-size: 2rem;">{{site.email}}</a>
+    <h1>Contacto</h1>
+    <p class="text-center">Si tienes alguna duda o consulta,<br/> no dudes en contactarnos al correo siguiente...</p>
+   <a target="_blank" href="mailto:{{site.email}}" class="mailtos">{{site.email}}</a>
    <br/>
-<img src="/res/images/sprites/argen_punta.png" width="130" draggable="false">
+<img class="arg" src="/res/images/sprites/argen_punta.png" width="130" draggable="false">
 </div>
+
+<style>
+.arg {
+margin-top: 20px;
+}
+
+.text-center {
+font-size: 1.1rem;
+}
+
+    .mailtos {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 430px) {
+        .mailtos {
+            font-size: 1.2rem;
+        }
+        
+    }
+</style>
