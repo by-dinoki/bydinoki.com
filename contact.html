@@ -7,7 +7,7 @@ sitemap: true
 ---
 <div class="container">
     <h1>Contacto</h1>
-    <p class="text-center">Si tienes alguna duda o consulta,<br/> no dudes en contactarnos al correo siguiente...</p>
+    <p class="text-center">Si tienes alguna duda o consulta,<br/> no dudes en contactarnos a este correo...</p>
    <a target="_blank" href="mailto:{{site.email}}" class="mailtos">{{site.email}}</a>
    <br/>
 <img class="arg" src="/res/images/sprites/argen_punta.png" width="130" draggable="false">
@@ -15,6 +15,7 @@ sitemap: true
 
 <style>
 .arg {
+width: 190px;
 margin-top: 20px;
 }
 
@@ -36,6 +37,10 @@ font-size: 1.1rem;
     @media screen and (max-width: 430px) {
         .mailtos {
             font-size: 1.2rem;
+        }
+
+        .arg{
+            width: 150px;
         }
         
     }
