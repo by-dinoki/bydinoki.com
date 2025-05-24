@@ -189,7 +189,7 @@
         limit: 10,
         fuzzy: !1,
         debounceTime: null,
-        exclude: ["&quot;", "&amp;", "&lt;", "&gt;"],
+        exclude: ["Hashtag"],
       },
       n;
     const e = function (t, e) {
