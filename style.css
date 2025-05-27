@@ -627,6 +627,28 @@ ul {
    font-size: 25px;
    
   }
+
+  .raw-html-embed{
+    margin: 10px 0;
+  }
+
+    .vcover{
+        width: 55%;
+    }
+    
+    @media screen and (max-width: 1000px){
+     
+    .vcover{
+        width: 70dvw;
+    }
+    }
+
+    @media screen and (max-width: 500px){
+     
+    .vcover{
+        width: 100%;
+    }
+    }
   
   @media screen and (max-width: 580px){
     
