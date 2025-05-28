@@ -132,7 +132,7 @@ function topFunction() {
     // javascript history back
 
     var window = (window)
-    const fallback = '/';
+    const fallback = '/p';
     var hasHistory = false;
 
 window.addEventListener('beforeunload', function(){
