@@ -12,6 +12,7 @@ permalink: /post/:title
 url: "https://bydinoki.com" # the base hostname & protocol for your site, e.g. http://example.com
 iglink: "https://instagram.com/dinoki_0n"
 ytlink:  "https://youtube.com/channel/UCmf1ZezKYhGjPGR1eZUuDlw"
+pfp: "/res/images/dinoki.jpg" # the path to your profile picture, e.g. /images/profile.jpg
 date_locale: es
 cseos: ""
 
