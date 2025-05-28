@@ -127,4 +127,28 @@ function topFunction() {
       // Mostrar el diálogo al cargar la página
       mostrarDialogoCookies();
     }
-          
+
+
+    // javascript history back
+
+    var window = (window)
+    const fallback = '/';
+    var hasHistory = false;
+
+window.addEventListener('beforeunload', function(){
+    hasHistory = true;
+});
+
+    function setHome(){
+
+window.history.go(-1);
+
+    setTimeout(function(){
+        if (!hasHistory){
+            window.location.href = fallback;
+        }
+    }, 200);
+
+    return false;
+
+    }
