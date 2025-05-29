@@ -635,6 +635,10 @@ ul {
     .vcover{
         width: 55%;
     }
+
+    .img_post{
+      width: 310px;
+    }
     
     @media screen and (max-width: 1000px){
      
