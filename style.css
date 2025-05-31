@@ -639,6 +639,48 @@ ul {
     .img_post{
       width: 310px;
     }
+
+    .vshow{
+    width: 95%;
+    height: 100%;
+    }
+
+    .video-showcase{
+      width: 100%;
+      height: max-content;
+    }
+
+
+    .grivv {
+  display: grid;
+  grid-template-columns: repeat(2, 0.8fr);
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .grivv {
+    grid-template-columns: 1fr;
+  }
+
+ .vshow{
+    width: 90%;
+    height: 80%;
+    }
+
+}
+
+        #imr1{
+      user-select: none;
+      text-transform: uppercase;
+      font-size: 50px;
+      color: #b80000;
+    }
+
+    #imr2{
+      user-select: none;
+      font-size: 22px;
+      color: #b80000;
+    }
     
     @media screen and (max-width: 1000px){
      

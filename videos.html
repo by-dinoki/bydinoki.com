@@ -1,0 +1,28 @@
+---
+title: Videos
+description: Los Videos de Dinoki ON.
+layout: page
+image: "https://bydinoki.com/res/branding/thumbnaill.jpg"
+sitemap: true
+---
+
+
+<h1 id="imr1">Videos</h1>
+<p id="imr2">Descubre lo que hace el Dinoki ON...</p>
+
+<br/>
+
+<div class="grivv">
+
+  {% for video in site.data.video %}
+  
+<div class="video-showcase">
+
+    <iframe class="vshow" src="https://www.youtube.com/embed/{{video.linked}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="aspect-ratio: 16 / 9;" data-ruffle-polyfilled=""></iframe>
+<p class="quott">{{ video.title }}</p> </div>
+
+  {% endfor %}
+
+</div>
+
+<br>
