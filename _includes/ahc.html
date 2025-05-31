@@ -1,8 +1,14 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">    <link rel="stylesheet" href="/style.css">
+    
+    {% if page.favicon %}
+    <link rel="shortcut icon" type="image/x-icon" href="{{ page.favicon }}">
+    {% else %}
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    {% endif %}
+
     <link href='https://fonts.googleapis.com' rel='preconnect'/>
 <link crossorigin='anonymous' href='https://fonts.gstatic.com' rel='preconnect'/>
 <link href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap' rel='stylesheet'/>
@@ -11,18 +17,6 @@
      {%- include seos.html -%}
 
      <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=67d87b30a47a1e001adc63eb&product=sop' async='async'></script>
-      <style>
-                
-#st-1 {
-  font-family: Poppins, sans-serif !important;
-}
-
-#st-1 .st-btn:hover{
-  opacity: 0.64 !important;
-  top: 0 !important;
-}
-
-               </style>
 
     <script>function rmurl(e,t){var r=new RegExp(/\?m=0|&m=0|\?m=1|&m=1/g);return r.test(e)&&(e=e.replace(r,''),t&&window.history.replaceState({},document.title,e)),e}const currentUrl=rmurl(location.toString(),!0);</script>
     

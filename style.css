@@ -506,6 +506,15 @@ color:#b80000;
 
 }
 
+#st-1 {
+  font-family: Poppins, sans-serif !important;
+}
+
+#st-1 .st-btn:hover{
+  opacity: 0.64 !important;
+  top: 0 !important;
+}
+
 .my-image {
  width: 230px;
  height: 230px;
@@ -1282,7 +1291,11 @@ color:black;
 
 .letras{
   font-size: medium;
+  color: #b80000;
+}
 
+iframe{
+  background-color: #000000;
 }
 
 .dialogo-contenido p {
@@ -1334,6 +1347,28 @@ width: 60%;
 .context{
 width: 80%;
 }
+}
+
+@media screen and (max-width: 480px) {
+
+  .padin-red {
+    margin: 15px 0;
+  }
+
+  #myBton {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+   #Btnt {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
 }
 
 /* Others Styles */
