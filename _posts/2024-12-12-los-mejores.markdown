@@ -4,6 +4,8 @@ title:  "Los Mejores"
 description: "No se pierda de nuestro nuevo sencillo &quot;los mejores&quot; Se trata de que unos amigos llamados pepe y lechis, en donde yo el compa Dinoki Dani flou, está para sus mentadas aventuras y por ser unos compadres de bien..."
 image: "/res/images/los-mejores.jpg"
 date:   2024-12-10 12:00:00 -0600
+redirect_from:
+  - /2024/12/los-mejores.html
 tags:
  - comunicado
 ---
