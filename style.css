@@ -177,11 +177,13 @@ display:none;
 
 }
 
+/* Estilos para pantallas más grandes (tv's) */
 
-@media (min-width: 2000px) {
+
+@media (min-width: 1710px) {
 
 header{
-  margin: 0px 14vw 15px;
+  padding: 30px 12dvw 15px;
 
 }
 
