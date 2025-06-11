@@ -695,7 +695,7 @@ ul {
 }
 
 @media (max-width: 600px) {
-  .griv {
+  .grivv {
     grid-template-columns: 1fr;
   }
 
