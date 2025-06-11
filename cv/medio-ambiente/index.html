@@ -1,0 +1,123 @@
+---
+title: "Blog de Medio Ambiente"
+description: "Este es un blog dedicado a la conciencia ambiental y la sostenibilidad. Aquí encontrarás artículos, recursos y reflexiones sobre cómo cuidar nuestro planeta."
+layout: page
+image: "https://newen.mx/wp-content/uploads/2021/06/Diseno-sin-titulo-3-1-1024x1024.png"
+sitemap: false
+---
+
+
+
+<div class="mainter">
+
+<h1 id="imr1">Blog de Medio Ambiente</h1>
+<p id="imr2">Tu Espacio para Conectar con el Medio Ambiente</p>
+
+</div>
+
+<section class="dr">
+
+    <section class="gridb">
+
+        {% for medioa in site.data.medioa %}
+
+<article class="arto">
+            <a href="{{medioa.link}}">
+            <h3>{{medioa.title}}</h3>
+            <img src="{{medioa.ing}}" alt="{{medioa.title}}" style="max-width:100%; margin-bottom:0.5em;">
+            <p style="margin-bottom: 2em;">
+                {{medioa.descrip}}
+            </p></a>
+           <a href="{{medioa.link}}"><button id="myBton">Leer más</button></a>
+        </article>
+
+        {% endfor %}
+
+    </section>
+
+<br />
+
+    <a href="/profe-alex">Regresar a Comunidades Virtuales</a>
+
+    </section>
+
+<style>
+
+.dorian{
+    margin: 0 !important;
+}
+
+#imr1, #imr2{
+    color: white;
+}
+
+.dr{
+    margin: 0 20%;
+}
+
+.arto{
+    border: 5px solid green;
+}
+
+.arto img{
+    height: 225px;
+    object-fit: cover;
+}
+
+article a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.mainter {
+  background: linear-gradient(#0080007a, #0080007a), url(https://wallpapers.com/images/hd/mexico-pictures-h1dimbrhp3luqppg.jpg) no-repeat center center;
+  background-position: top;
+  background-size: cover;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 50px;
+  user-select: none;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#myBton{
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 0px 3px green;
+}
+
+#myBton:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+footer{
+    color: green;
+}
+
+@media screen and (max-width: 680px) {
+
+    .dr {
+        margin: 0 5%;
+    }
+
+    .mainter {
+        padding: 30px 20px;
+        height: auto;
+    }
+    #imr1 {
+        font-size: 1.8em;
+    }
+
+    #imr2 {
+        font-size: 1.2em;
+        margin: 0 auto;
+    }
+    
+}
+
+</style>
