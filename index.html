@@ -5,11 +5,97 @@ image: "https://bydinoki.com/res/branding/thumbnail.jpg"
 sitemap: true
 ---
 
-<img class="wraper-ing" src="/res/images/bcovers/bcover10.jpg" draggable="false">
+<!-- img class="wraper-ing" src="/res/images/bcovers/bcover.jpg" draggable="false">
 </img>
 
 <p class="cc"><a target="_blank" href="/"></a></p>
-<br/>
+<br/ -->
+
+<section>
+<hr style="margin: 30px 0;">
+
+<h1 id="imr1">BIENVENID@ A #BYDINOKI !</h1>
+
+<hr style="margin: 30px 0;">
+
+    <section class="flex-container">
+        <div class="cco">
+        <h2>Sobre el Artista</h2>
+        <p>
+            Daniel Ruiz es un artista emergente apasionado por la música y la pintura. Su trabajo explora la interacción entre la tecnología y la expresión artística, creando piezas que invitan a la reflexión sobre el aprendizaje y la colaboración en línea. Él crea historias interesantes en sus personajes con un toque de drama y misterio, que lo hace atractivo a la gente y los escritores de esta época. Ademas de pinturas y historias, Daniel Ruiz también crea música y canciones graciosas que complementa sus obras visuales, creando una experiencia multisensorial para su audiencia.
+        </p></div>
+        <img class="aoll" src="/res/images/guappodna.jpg" alt="Obra de Daniel Ruiz" style="margin: 1em 0;">
+    </section>
+
+    <section class="flex-container ifnal">
+        <img class="aoll" src="/res/images/dapastel.jpg" alt="Daniel Ruiz" style="margin: 1em 0;">
+        <div class="cco" style="text-align: right; padding-left: 2em; padding-right: 0;">
+        <h2>Propósitos</h2>
+        <p>
+            Nuestros Propósitos es hacer un estudio en donde los artistas puedan ver las historias de Daniel Ruiz y hacerlas populares a través de promociones, medidas y paciencia, así garantizamos que esta comunidad que busca el Daniel Ruiz sea la indicada para sus historias asombrosas. Daniel Ruiz busca crear un espacio donde los artistas puedan compartir sus historias y obras, fomentando un ambiente de colaboración y aprendizaje mutuo. A través de su trabajo, espera inspirar a otros a explorar su creatividad y encontrar su voz única en el mundo del arte. Con la ayuda de comunidades virtuales, Daniel Ruiz busca conectar con otros artistas y compartir su visión del mundo a través de su arte.
+        </p></div>
+    </section>
+
+    <hr style="margin: 30px 0;">
+
+    <h2 style="color: #b80000;"><u>Últimas Publicaciones</u></h2>
+
+    <section class="gridb">
+
+        {%- for post in site.posts limit: 4 -%}
+
+        <article class="arto">
+            <a href="{{post.url | prepend: site.baseurl }}">
+            <h3>{{ post.title }}</h3>
+            {% include postdates.html date=post.date time-attributes='class="post-date"' %}
+            <br><br>
+            <img src="{{post.image}}" alt="{{post.title}}" style="max-width:100%; margin-bottom:0.5em;">
+            <p style="margin-bottom: 2em;">
+                {{post.description | truncate: 150, '...'}}
+            </p></a>
+           <a href="conciencia-ambiental.html"><button id="myBton">Leer más</button></a>
+        </article>
+{%- endfor -%}
+    </section>
+</section>
+
+    <hr style="margin: 30px 0;">
+
+<section>
+    <h2 style="color: #b80000;"><u>Siguenos !</u></h2>
+    <p>Si quieres ver sus obras a la luz, siguelo en sus redes sociales...</p>
+    <div style="display: flex; gap: 1em; flex-wrap: wrap; justify-content: center;">
+
+         <a href="/bydinoki" target="_blank" rel="noopener">
+            <button id="myBton" aria-label="TikTok">
+                <img src="https://img.icons8.com/?size=100&id=ViTdIlSSJmKv&format=png&color=000000" alt="Post" style="height:1em;vertical-align:middle;margin-right:0.5em;">Publicaciones
+            </button>
+        </a>
+        
+        <a href="https://youtube.com/@dinoki_0n" target="_blank" rel="noopener">
+            <button id="myBton" aria-label="YouTube">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" style="height:1em;vertical-align:middle;margin-right:0.5em;">Dinoki ON
+            </button>
+        </a>
+
+        <a href="https://instagram.com/dinoki_0n" target="_blank" rel="noopener">
+            <button id="myBton" aria-label="Instagram">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="height:1em;vertical-align:middle;margin-right:0.5em;">@dinoki_0n
+            </button>
+        </a>
+
+        <a href="https://tiktok.com/@dinoki_0n" target="_blank" rel="noopener">
+            <button id="myBton" aria-label="TikTok">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" style="height:1em;vertical-align:middle;margin-right:0.5em;">@dinoki_0n
+            </button>
+        </a>
+
+    </div>
+
+</section>
+
+<hr style="margin: 30px 0;">
+
 
 <style>
 
@@ -25,13 +111,86 @@ sitemap: true
 
 .dorian{
  user-select: none;
-    padding: 0;
-    margin: 0 12vw auto;
 }
 
 footer {
 
-    display: none;
+    display: block;
+}
+
+
+#myBton{
+    width: 100%;
+}
+
+.vvvvc{
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+article a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.aoll{
+    max-width: 45%;
+}
+
+#myBton:hover img{
+    filter: invert(1);
+    transition: ease-in-out 0.3s;
+}
+
+.arto img{
+    height: 225px;
+    object-fit: cover;
+}
+
+.cco{
+    padding-right: 2em;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .vvvvc{
+        width: 90% !important;
+        max-width: 100%;
+    }
+
+    .aoll{
+        max-width:100%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+     .ifnal{
+      display: flex !important;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+}
+
+    .flex-container{
+        display: grid; }
+
+    .gricl {
+        grid-template-columns: 1fr;
+    }
+
+    #imr1 {
+        font-size: 2em;
+    } 
+
+    #imr2 {
+        font-size: 1.5em;
+    }
+    
 }
 
 </style>
