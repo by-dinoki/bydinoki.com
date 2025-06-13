@@ -53,13 +53,12 @@ sitemap: true
             <p style="margin-bottom: 2em;">
                 {{post.description | truncate: 150, '...'}}
             </p></a>
-           <a href="{{post.url | prepend: site.baseurl }}">Leer más</a>
+           <a href="{{post.url | prepend: site.baseurl }}"><button id="myBton">Leer más</button></a>
         </article>
 {%- endfor -%}
     </section>
 
-    <a href="/post" style="display: block; text-align: center; margin-top: 2em;">
-        <button id="myBton">Más Posts</button></a>
+    <a href="/post" style="display: block; text-align: center; margin-top: 2em;">Más Posts</a>
 
 </section>
 
