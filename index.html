@@ -53,7 +53,7 @@ sitemap: true
             <p style="margin-bottom: 2em;">
                 {{post.description | truncate: 150, '...'}}
             </p></a>
-           <a href="conciencia-ambiental.html"><button id="myBton">Leer más</button></a>
+           <a href="{{post.url | prepend: site.baseurl }}">Leer más</a>
         </article>
 {%- endfor -%}
     </section>
