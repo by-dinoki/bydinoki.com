@@ -51,7 +51,7 @@ sitemap: true
             <br><br>
             <img src="{{post.image}}" alt="{{post.title}}" style="max-width:100%; margin-bottom:0.5em;">
             <p style="margin-bottom: 2em;">
-                {{post.description | truncate: 150, '...'}}
+                {{post.description}}
             </p></a>
            <a href="{{post.url | prepend: site.baseurl }}"><button id="myBton">Leer más</button></a>
         </article>
@@ -68,12 +68,6 @@ sitemap: true
     <h2 style="color: #b80000;">Siguenos !</h2>
     <p>Si quieres ver sus obras a la luz, siguelo en sus redes sociales...</p>
     <div style="display: flex; gap: 1em; flex-wrap: wrap; justify-content: center;">
-
-         <a href="/bydinoki" target="_blank" rel="noopener">
-            <button id="myBton" aria-label="TikTok">
-                <img src="https://img.icons8.com/?size=100&id=ViTdIlSSJmKv&format=png&color=000000" alt="Post" style="height:1em;vertical-align:middle;margin-right:0.5em;">Publicaciones
-            </button>
-        </a>
         
         <a href="https://youtube.com/@dinoki_0n" target="_blank" rel="noopener">
             <button id="myBton" aria-label="YouTube">
@@ -87,9 +81,15 @@ sitemap: true
             </button>
         </a>
 
-        <a href="https://tiktok.com/@dinoki_0n" target="_blank" rel="noopener">
-            <button id="myBton" aria-label="TikTok">
-                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" style="height:1em;vertical-align:middle;margin-right:0.5em;">@dinoki_0n
+        <a href="https://facebook.com/dinokiii" target="_blank" rel="noopener">
+            <button id="myBton" aria-label="Facebook">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" style="height:1em;vertical-align:middle;margin-right:0.5em;">dinokiii
+            </button>
+        </a>
+
+        <a href="/social" target="_blank" rel="noopener">
+            <button id="myBton" aria-label="Social">
+                <img src="https://img.icons8.com/?size=100&id=ViTdIlSSJmKv&format=png&color=000000" alt="Social" style="height:1em;vertical-align:middle;margin-right:0.5em;">Redes Sociales
             </button>
         </a>
 
