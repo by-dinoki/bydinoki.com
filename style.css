@@ -96,7 +96,6 @@ overflow: hidden;
 }
 
 header {
-    transition: 1s;
     display: flex;
     position: sticky;
     top: 0;
