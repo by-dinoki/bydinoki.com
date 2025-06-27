@@ -10,53 +10,97 @@ redirect_from:
 
 <!-- HTML Embed -->
 
-<div>
-    <div class="changel-alexx">
+<div class="container1">
+    <div class="divsa">
 <div class="s8ky">
-    <h1 style="font-size: 35px;">Adios Profe !</h1>
-    <p>Eso es todo lo que voy a mostrar aquí, así que nos vemos en la próxima actividad...</p>
+    <h1>Adios <br class="esp">Profe !</h1>
+    <p>Eso es todo lo que voy a mostrar aquí,<br> así que nos vemos en la próxima actividad...</p>
 </div>
-    <img class="b6lu" src="/res/images/sprites/brusit.png" style="pointer-events: none;" alt="BR" class="b" width="30%"/>
 
 </div>
+
+
+<img class="bruu" src="/res/images/sprites/brusit.png" alt="Brue">
+
 </div>
 
 <style>
 
+.container1 {  
+
+    text-align: center;
+
+}
+
+    .bruu {
+        height: 50%;
+        object-fit: contain;
+    }
+
+    .esp {
+        display: block;
+    }
+
+.divsa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .s8ky {
-    background: url(/res/images/sprites/nube.png) center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 260px;
-    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: #ffffff;
     padding: 20px;
 }
 
-.s6lu{
-    width: 30%;
+.s8ky h1 {
+    font-size: 3rem;
+    color: #b80000;
+    text-align: justify;
+    margin-right: 20px;
 }
 
+.s8ky p {
+    font-size: 1.3rem;
+    color: #666666;
+    line-height: 1.5;
+    text-align: left;
+}
 
-    @media screen and (max-width: 900px) {
-        .s8ky {
-            width: 100%;
-            height: auto;
-            padding: 10px;
-        }
-        .b6lu {
-            width: 60%;
-        }
-        
+@media screen and (max-width: 568px) {
+
+    .divsa, .s8ky {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
 
-        @media screen and (max-width: 900px) {
-
-        .s8ky {
-            background: none;
-            padding: 0;
-            margin: 30px 0;
-
-        }
+    .s8ky h1 {
+        font-size: 35px;
+        margin: 0;
     }
+    .s8ky p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .divsa {
+        height: auto;
+        padding: 20px;
+    }
+    
+    .bruu {
+        height: 35%;
+        margin-top: 20px;
+    }
+
+    .esp {
+        display: none;
+    }
+}
 
 </style>
