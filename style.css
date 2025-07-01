@@ -1402,4 +1402,40 @@ width: 80%;
   
 }
 
+
+.img-fluid{
+
+max-width: 40%;
+
+}
+
+.txts{
+  user-select: none;
+    font-size: 1.7em;
+}
+
+.yaentro{
+  user-select: none;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+  @media screen and (max-width: 600px) {
+    .img-fluid {
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+
+    .txts{
+        font-size: medium;
+    }
+
+    .yaentro{
+        font-size: 1.2em;
+    }
+    
+  }
+
 /* Others Styles */
