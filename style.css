@@ -520,7 +520,6 @@ color:#b80000;
  width: 230px;
  height: 230px;
 object-fit: cover;
-margin-left: 20px;
 }
    
 .referl{
@@ -570,7 +569,10 @@ ul {
 }
 
 .pots{
+  margin: 20px 0;
   display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 .pricing-table {
