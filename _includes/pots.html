@@ -1,4 +1,5 @@
  <article class="pots">
+    
     <div class="context">
     <a class="referl" style="text-decoration: none; color: black;" href="{{ post.url | relative_url }}">   
         <h2 class="tile">{{post.title}}</h2>
@@ -15,9 +16,8 @@
         {% if post.image != emphy %}
 
        <img class="my-image" loading="lazy" src="{{ post.image }}">
-       <br/>
+
        {% endif %}</a>
-        
-    <br/><hr/>
 <br/>
 </article>
+<hr/>
